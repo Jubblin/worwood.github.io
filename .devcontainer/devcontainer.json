@@ -5,7 +5,7 @@
     "ghcr.io/devcontainers/features/hugo:1": {
       "version": "latest",
       "extended": true
-    }
+    },
   },
   "customizations": {
     "vscode": {
@@ -16,6 +16,7 @@
       ]
     }
   },
+  "workspaceMount": "source=/workspace,target=/workspace,type=bind,options=rbind:rw",
   "forwardPorts": [1313],
   "postCreateCommand": "hugo version",
   "remoteUser": "vscode"

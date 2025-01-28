@@ -152,31 +152,31 @@ experience:
       date: June 2008 - May 2010
       description: |
         + TECH & METHODS: Azure, GCP, AWS (EKS, RDS & EFS), Kong, TLS, Bamboo, Jenkins, Bitbucket, Gitlab, Github, Jenkins, SonarQube, Nexus, VSTS, Artifactory, Istio, ELK, ECK, Prometheus/Grafana, WAFs, Ansible, Terraform, Packer, Puppet, Powershell & Powershell DSC, IIS, Nginx, Apache, Windows Server, Ubuntu, Centos, RHEL, React, SpringBoot, .Net Web, .Net Core
-#       title: Customer Projects
-#       items:
-#         - client: Toyota Motors
-#           project: Onboard Connected Services
-#           description: Project to deliver services for delivery within the manufacturers vehicles to extend and enhance legacy solutions which have historically been inflexible. This gives the customers smart functionality in there vehicles but creates new revenue streams for the Manufacturer.
-#             Implemented a Kubernetes microservices architecture utilising React based front end and Springboot intergration services. 
+      section: Customer Projects
+      items:
+        - client: Toyota Motors
+          project: Onboard Connected Services
+          description: Project to deliver services for delivery within the manufacturers vehicles to extend and enhance legacy solutions which have historically been inflexible. This gives the customers smart functionality in there vehicles but creates new revenue streams for the Manufacturer.
+            Implemented a Kubernetes microservices architecture utilising React based front end and Springboot intergration services. 
 
-#         - client: Department for Transport
-#           project: Blue Badge system
-#           description: Project to deliver a suite of Services to provide a system to manage the UK's Blue Badge application, eligibility and issuance requirements. 
-# x
-#         - client: Major British Airline
-#           project: Consultancy Engagement to audit, rationalise and implement DevOps and Agile working into existing teams 
+        - client: Department for Transport
+          project: Blue Badge system
+          description: Project to deliver a suite of Services to provide a system to manage the UK's Blue Badge application, eligibility and issuance requirements. 
+          
+        - client: Major British Airline
+          project: Consultancy Engagement to audit, rationalise and implement DevOps and Agile working into existing teams 
 
-#         - client: Department for Work and Pensions
-#           project: New Style Job Seekers Allowance
-#           description: Project to replace an aged and outmoded system. Implemented a, microservices architecture based, claimant system, with the intent of both easing the process of initial claim submission and onboarding into the UK benefits system.
+        - client: Department for Work and Pensions
+          project: New Style Job Seekers Allowance
+          description: Project to replace an aged and outmoded system. Implemented a, microservices architecture based, claimant system, with the intent of both easing the process of initial claim submission and onboarding into the UK benefits system.
 
-#         - client: OFGEM
-#           project: Proof of Concept Secure Data Exchange
-#           description: Project to implement a Proof of Concept secure data exchange to be used to ingest data into an organisational data hub. 
+        - client: OFGEM
+          project: Proof of Concept Secure Data Exchange
+          description: Project to implement a Proof of Concept secure data exchange to be used to ingest data into an organisational data hub. 
 
-#         - client: Delonghi
-#           project: Delonghi Retail
-#           description: Brown field project to update and extend functionality within brochureware, CMS and ecommerce sites hosted on Google Cloud. Developed an Azure migration strategy as part of a move to increase resilience and scalability of the hosting platforms in use as part of this global solution.
+        - client: Delonghi
+          project: Delonghi Retail
+          description: Brown field project to update and extend functionality within brochureware, CMS and ecommerce sites hosted on Google Cloud. Developed an Azure migration strategy as part of a move to increase resilience and scalability of the hosting platforms in use as part of this global solution.
 
     # Principal Technical Consultant
     - company: TDB Fusion
