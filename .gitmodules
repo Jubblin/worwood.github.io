@@ -1,0 +1,4 @@
+[submodule "themes/online-resume"]
+	path = themes/online-resume
+	url = https://github.com/Jubblin/hugo-theme-online-resume
+	branch = cv

@@ -1,0 +1,529 @@
+meta:
+  direction: ltr            # text direction, "ltr" (like English) or "rtl" (like Arabic), default is "ltr"
+  language: en              # text language, the value is HTML lang attribute value, default is "en"
+
+basic:
+  name: Richard Worwood                      # name
+  title: Senior Infrastructure Architect     # job title 
+  avatar:
+    show: true                       # show or hide avatar
+    path: /images/profile.png        # file path or link to your avatar
+
+contact:
+  location: London, England  # location, text or markdown link syntax
+  email: richard@worwood.com     # email address
+  phone: +44 7771 662880  # phone number, the format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
+  website: worwood.com      # site link without schema, like example.com, will automatically prepend "https://"
+
+  gender:                   # gender or pronoun
+  birthday:                 # birthday
+  nationality: UK              # nationality
+  visa:                     # passport visa
+  drivinglicense: Full, Clean           # driving licence
+
+  # ! Do not paste the link directly.
+  # Please copy the <> part of the comment in the link to your profile on the relevant site and paste it here.
+
+  # programming
+  github: https://github.com/Jubblin                   # 
+  gitlab:                   # https://gitlab.com/<username>
+  bitbucket:                # https://bitbucket.com/<username>
+  git:                      # selfhost git site link without schema "https://"
+  leetcode:                 # https://leetcode.com/<username>
+  codeforces:               # https://codeforces.com/profile/<username>
+  codewars:                 # https://www.codewars.com/users/<username>
+  topcoder:                 # https://profiles.topcoder.com/<username>
+  huggingface:              # https://huggingface.co/<username>
+  codepen:                  # https://codepen.io/<username>
+  tryhackme:                # https://tryhackme.com/p/<username>
+
+  # research
+  googlescholar:            # https://scholar.google.com/citations?user=<username>
+  researchgate:             # https://www.researchgate.net/profile/<username>
+  orcid:                    # https://orcid.org/<id>
+  figshare:                 # https://figshare.com/authors/<name/id>
+  kaggle:                   # https://www.kaggle.com/<username>
+
+  # writing
+  medium:                   # https://medium.com/@<username>
+  wordpress:                # https://<username>.wordpress.com
+  blogger:                  # https://<username>.blogspot.com
+  devto:                    # https://dev.to/<username>
+
+  # creativity
+  figma:                    # https://www.figma.com/@<username>
+  behance:                  # https://www.behance.net/<username>
+  dribbble:                 # https://dribbble.com/<username>
+  artstation:               # https://www.artstation.com/<username>
+  pixiv:                    # https://www.pixiv.net/users/<id>
+  pinterest:                # https://www.pinterest.com/<username>
+  producthunt:              # https://www.producthunt.com/@<username>
+
+  # cv
+  linkedin: https://www.linkedin.com/in/richardworwood  # https://linkedin.com/in/<username>
+  indeed:                   # https://my.indeed.com/p/<id>
+  xing:                     # https://www.xing.com/profile/<username>
+  fiverr:                   # https://www.fiverr.com/<username>
+  freelancer:               # https://www.freelancer.com/u/<username>
+
+  # chat
+  wechat:                   # wechat id, text or markdown link syntax
+  whatsapp:                 # https://wa.me/<number>
+  telegram:                 # https://t.me/<username>
+  messenger:                # https://m.me/<username>
+  line:                     # https://line.me/R/ti/p/@<lineid>
+  viber:                    # https://vb.me/<username>
+  threema:                  # https://threema.id/<userid>
+  signal:                   # signal username, text or markdown link syntax
+  wire:                     # wire username, text or markdown link syntax
+
+  # social
+  stackoverflow:            # https://stackoverflow.com/users/<id>
+  stackexchange:            # https://stackexchange.com/users/<id>
+  quora:                    # https://www.quora.com/profile/<username>
+  zhihu:                    # https://www.zhihu.com/people/<username>
+  goodreads:                # https://www.goodreads.com/user/show/<username>
+  strava:                   # https://www.strava.com/athletes/<id>
+  wikipedia:                # https://www.wikipedia.org/wiki/User:<username>
+  twitter:                  # https://twitter.com/<username>
+  x:                        # https://x.com/<username>
+  mastodon:                 # text, the format must be like "username@yourserver.com"
+  threads:                  # https://www.threads.net/@<username>
+  vk:                       # https://vk.com/<username>
+  weibo:                    # weibo username, text or markdown link syntax
+  instagram:                # https://instagram.com/<username>
+  unsplash:                 # https://unsplash.com/@<username>
+  _500px:                   # https://500px.com/p/<username>
+  youtube:                  # https://www.youtube.com/@<username>
+  tiktok:                   # https://www.tiktok.com/@<username>
+  snapchat:                 # https://www.snapchat.com/add/<username>
+  twitch:                   # https://www.twitch.tv/<username>
+
+profile:
+  show: true
+  order: 1
+  title: Profile
+  description: |
+    A highly experienced Solutions Consultant with a diverse background in Finance, Enterprise, and Telecommunications. They possess expertise in Pre/Post-sales Support, Product/Program Management, Project Management, Services Sales, Consultancy, and Training. They are proficient in working with both technical and non-technical stakeholders and adept at resolving complex issues throughout the sales and delivery cycles. They are committed to remaining current with the latest technologies and are a dedicated and motivated team player.
+
+experience:
+  show: true
+  order: 2
+  title: Experience
+  description: |
+
+  items:
+    # - company: Endava UK
+    #   link: '#'
+    #   tags: Full-time
+    #   date: August, 2022  - Present
+    #   role: Backend Developer
+    #   location: Beijing
+    #   description: |
+    #     Your key responsibilities and achievements in the company.
+    #     + First
+    #     + Second
+
+    # Jobs
+    # Senior Infrastructure Architect
+    - company: Endava UK
+      link: '#Endava'
+      tags: Full-time
+      role: Senior Infrastructure Architect
+      location: Hybrid/London
+      date: August, 2022 - Present
+      description: Working as a Cloud Architect and Tech Lead across a number of Workstreams, delivering secure unified Containerisation solutions using Kubernetes leveraging Anthos, AKS & EKS.
+
+    # Principal Consultant
+    - company: Devoteam
+      link: '#'
+      tags: Full-time
+      role: Principal Consultant
+      location: Hybrid/London
+      date: April 2021 - July 2022
+      description: Working as an Architect for a Tier 1 Market Data Provider on a major initiative to transform their market data platform to hybrid Bare-metal and Cloud Kubernetes environments.
+
+    # Senior DevOps Consultant
+    - company: Valtech
+      link: '#Valtech'
+      tags: Full-time
+      role: Senior DevOps Consultant
+      location: London, Manchester, Bristol, Brussels, Dusseldorf 
+      date: June 2008 - May 2010
+      description: |
+        + TECH & METHODS: Azure, GCP, AWS (EKS, RDS & EFS), Kong, TLS, Bamboo, Jenkins, Bitbucket, Gitlab, Github, Jenkins, SonarQube, Nexus, VSTS, Artifactory, Istio, ELK, ECK, Prometheus/Grafana, WAFs, Ansible, Terraform, Packer, Puppet, Powershell & Powershell DSC, IIS, Nginx, Apache, Windows Server, Ubuntu, Centos, RHEL, React, SpringBoot, .Net Web, .Net Core
+#       title: Customer Projects
+#       items:
+#         - client: Toyota Motors
+#           project: Onboard Connected Services
+#           description: Project to deliver services for delivery within the manufacturers vehicles to extend and enhance legacy solutions which have historically been inflexible. This gives the customers smart functionality in there vehicles but creates new revenue streams for the Manufacturer.
+#             Implemented a Kubernetes microservices architecture utilising React based front end and Springboot intergration services. 
+
+#         - client: Department for Transport
+#           project: Blue Badge system
+#           description: Project to deliver a suite of Services to provide a system to manage the UK's Blue Badge application, eligibility and issuance requirements. 
+# x
+#         - client: Major British Airline
+#           project: Consultancy Engagement to audit, rationalise and implement DevOps and Agile working into existing teams 
+
+#         - client: Department for Work and Pensions
+#           project: New Style Job Seekers Allowance
+#           description: Project to replace an aged and outmoded system. Implemented a, microservices architecture based, claimant system, with the intent of both easing the process of initial claim submission and onboarding into the UK benefits system.
+
+#         - client: OFGEM
+#           project: Proof of Concept Secure Data Exchange
+#           description: Project to implement a Proof of Concept secure data exchange to be used to ingest data into an organisational data hub. 
+
+#         - client: Delonghi
+#           project: Delonghi Retail
+#           description: Brown field project to update and extend functionality within brochureware, CMS and ecommerce sites hosted on Google Cloud. Developed an Azure migration strategy as part of a move to increase resilience and scalability of the hosting platforms in use as part of this global solution.
+
+    # Principal Technical Consultant
+    - company: TDB Fusion
+      link: '#'
+      tags: Full-time
+      role: Principal Technical Consultant
+      location: Hybrid/London/Reading, International travel
+      date: August, 2002 - July 2015
+      description: Networking and Systems specialist with 24 years technical, financial and managerial experience in both Enterprise and Telecoms sectors. Broad experience from Pre/Post Sales Support, Product/Program Management, Project Management, Services Sales, Consultancy and Training
+
+      specialties: Pre-sales, Post-sales, team development, product management, service management/development/pricing, professional services, project/program management, contract negotiation, technical training.
+      skills: Self-healing · Technical Requirements · Cloud Strategy · Public Cloud · Emerging Technologies · Soft Skills · Business Requirements · Agile Methodologies · Problem Solving
+
+    #  Technical Consultant
+    - company: Thrupoint
+      link: '#'
+      tags: Contract
+      role: Technical Consultant
+      location: Warsaw & Poznan, Poland
+      date: May 2002 - July 2002
+      description: Engaged as part of a trans-national team to construct a countrywide IP VPN backbone network, based on Cisco's MPLS technology. The network was designed to enable Energis Poland to offer state-of-the art network services to enterprises, as well as wholesale IP transit for other service providers, such as ISPs and ASPs. The IP network, based on Cisco Multiprotocol Label Switching offers high-speed data transmission with Quality of Service (QoS). These services enabled the delivery of enhanced services for critical applications such as corporate management systems and made it possible to introduce new applications such as distance learning, IP telephony, video on demand into the Polish market.
+      skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving
+
+    # Support Engineer
+    - company: Orchestream
+      link: '#'
+      tags: Full-time
+      role: Support Engineer
+      location: London, International travel
+      date: August 2002 - July 2015
+      description: As a Support Engineer at Orchestream I was responsible for the Pre & Post Sales Support of the whole range of Orchestream functionality, working closely with the Technical Consultants to assist in the Design and Deployment of customer projects. The customer projects involved IP based MPLS VPN & QoS networks using a variety of vendor routers. I have worked with major tier one Service Providers
+      skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving
+
+    # Operational Technical Design Architect
+    - company: Cap Gemini/ICL
+      link: '#'
+      tags: Full-time
+      role: Operational Technical Design Architect
+      location: London, UK travel
+      date: 1998 - 2001
+      description: As a Support Engineer at Orchestream I was responsible for the Pre & Post Sales Support of the whole range of Orchestream functionality, working closely with the Technical Consultants to assist in the Design and Deployment of customer projects. The customer projects involved IP based MPLS VPN & QoS networks using a variety of vendor routers. I have worked with major tier one Service Providers
+      skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving
+
+    # Senior Architect
+    - company: Info'Products
+      link: '#'
+      tags: Full-time
+      role: Senior Architect
+      location: UK Wide
+      date: 1995 - 1998
+      description: Support Engineer based on a variety of customer sites across the UK working in roles ranging from Hardware Engineer to Senior Architect by way of Team Leader.
+      skills: Technical Requirements · Soft Skills · Problem Solving
+
+
+# project:
+#   show: true
+#   order: 3
+#   title: Projects
+#   description: |
+#     The project section in a resume is a section where you can highlight any significant projects that you have completed during your education, work experience, or personal endeavors. This section provides a detailed description of your projects that can showcase your skills, abilities, and achievements.
+
+#     In this section, you should include the name of the project, the role you played in the project, the duration, the tools and technologies you used, the objective of the project, and the outcome or result achieved. You can also include any relevant metrics or data that demonstrate the impact of the project.
+
+#     The project section is especially useful for candidates with limited work experience or those looking to highlight specific skills or accomplishments that may not be apparent in other parts of their resume. It can also be beneficial for candidates in technical or creative fields, where projects play a significant role in showcasing their capabilities.
+
+#   items:
+#     - name: Personal project
+#       link: '#'
+#       tags:
+#       date: 2015 - 2017
+#       description: |
+#         Personal project description...
+#         + First
+#         + Second
+
+#     - name: OSS project
+#       link:
+#       tags: committer
+#       date:
+#       description: |
+#         OSS project description...
+#         + First
+#         + Second
+
+# skill:
+#   show: true
+#   order: 4
+#   title: Skills
+#   description: |
+#     The skills section in a resume is a dedicated section where you can list out the various skills that you possess that are relevant to the job you are applying for. This section allows you to highlight your strengths and demonstrate your capabilities to potential employers.
+
+#     The skills section can include both hard skills and soft skills. Hard skills are specific technical abilities or knowledge related to a particular job or industry, such as proficiency in programming languages or experience with certain software programs. Soft skills are more general personal traits and abilities, such as communication skills, leadership, problem-solving, or teamwork.
+
+#     When crafting your skills section, it's important to tailor it to the specific job you are applying for, and only include skills that are relevant to the position. This can help catch the attention of the hiring manager and demonstrate that you have the qualifications necessary to succeed in the role.
+
+#     There are multiple ways to present your skills here. One way is to show them in a rating format. Another way is to group them together. Alternatively, you can use markdown to format it in a way that you prefer.
+
+#   items:
+#     - name: Skill A
+#       level: 5
+#     - name: Skill B
+#       level: 4
+#     - name: Skill C
+#       level: 3
+#     - name: Skill D
+#       level: 4
+#     - name: Skill E
+#       level: 3
+#     - name: Skill F
+#       level: 1
+#     - name: Skill G
+#       level: 4
+#     - name: Skill H
+#       level: 4
+#     - name: Skill I
+#       level: 3
+
+#   groups:
+#     - name: Group A Skills
+#       item:
+#         - Skill A
+#         - Skill B
+#         - Skill C
+#         - Skill D
+#     - name: Group B Skills
+#       item:
+#         - Skill E
+#         - Skill F
+#         - Skill G
+#     - name: Group C Skills
+#       item:
+#         - Skill H
+#         - Skill I
+
+# education:
+#   show: true
+#   order: 5
+#   title: Education
+#   description: |
+#     The education section in a resume is where you provide information about your academic background, including any degrees. In this section, you should include the name and location of the institution where you received your degree, the name of the degree or program you completed, and the date of graduation. If you have earned multiple degrees, list them in reverse chronological order, with the most recent degree first.
+
+#     In addition to basic information about your education, you may also want to include any academic honors or awards you received, relevant coursework or projects, and your GPA if it is 3.0 or above. If you have recently graduated and do not have much work experience yet, highlighting your education and academic achievements can help demonstrate your potential to succeed in the workplace.
+
+#   items:
+#     - institution: Example University
+#       link: '#'
+#       date: 2015 - 2018
+#       major: Machine Learning
+#       degree: Master
+#       description: |
+#         Additional information for this institution.
+#         + First
+#         + Second
+
+#     - institution: Example University
+#       link:
+#       date: 2011 - 2015
+#       major: Computer Science
+#       degree: Bachelor
+#       description: |
+#         Additional information for this institution.
+#         + First
+#         + Second
+
+# certificate:
+#   show: true
+#   order: 6
+#   title: Certificates
+#   description: |
+#     The certificate section in a resume is a dedicated section where you can showcase any additional certifications or specialized training you have received. This section provides potential employers with a more complete picture of your skills and expertise, and can help you stand out from other candidates.
+
+#     Certificates can come from a variety of sources, such as online courses, workshops, or professional development programs. Examples of certificates that might be relevant to include on your resume could include certifications in a particular software or technology, industry-specific certifications, or certifications related to a specific skill or area of expertise.
+
+#     When including your certificates in your resume, be sure to provide the name of the certification, the institution or organization that issued it, and the date it was issued. You may also want to include a brief description of the skills or knowledge that the certification demonstrates.
+
+#     The certificate section of your resume should be tailored to the specific job you are applying for, and should only include certifications that are relevant to the position. By highlighting your certifications, you can demonstrate your commitment to professional development and your expertise in a particular area.
+
+#   items:
+#     - name: Example Certificate One
+#       issuer: by Example
+#       date: 2020
+#       link: '#'
+#       description: |
+#         It's my Example Certificate One by Example.
+#     - name: Example Certificate Two
+#       issuer: by Example
+#       date: 2020
+#       link:
+#       description: |
+#         It's my Example Certificate Two by Example.
+
+# publication:
+#   show: true
+#   order: 7
+#   title: Publications
+#   description: |
+#     The publication section in a resume is a dedicated section where you can showcase any publications that you have authored or contributed to. This section is particularly relevant for individuals in academic or research fields, but can also be relevant for individuals in other fields who have published articles or papers.
+
+#     Publications can include academic journal articles, conference papers, book chapters, reports, or other written works. In this section, you should list the title of the publication, the names of any co-authors, the name of the publication or conference, the date of publication, and any other relevant details.
+
+#     If you have a long list of publications, you may want to consider including only the most relevant or significant publications on your resume. Alternatively, you could create a separate publication list and provide it as a separate document, either in your application materials or upon request.
+
+#     Including a publication section in your resume can help demonstrate your expertise and credibility in your field, and can help you stand out from other candidates. However, if you do not have any publications to list, it is not necessary to include this section in your resume.
+
+#   items:
+#     - title: Example Publication in Action
+#       authors: Foo Bar
+#       conference: Foobar, 2019
+#       link: '#'
+#     - title: The Art of Example Publication
+#       authors: Foo Bar
+#       conference: Foobar, 2019
+#       link:
+
+# award:
+#   show: true
+#   order: 8
+#   title: Awards
+#   description: |
+#     The award section in a resume is a dedicated section where you can showcase any awards you have received. This section is particularly relevant for individuals who have received awards for their work in their field, such as employees who have received performance awards or industry-specific awards. In this section, you should list the name of the award, the organization or institution that awarded it, the date it was awarded, and any other relevant details.
+
+#     When including your awards on your resume, be sure to focus on the most significant or relevant awards that showcase your skills and expertise. If you have received a long list of awards, you may want to consider including only the most recent or prestigious awards on your resume.
+
+#     By highlighting your awards, you can demonstrate your achievements and accomplishments in your field, and can help differentiate yourself from other candidates. However, if you have not received any awards, it is not necessary to include this section in your resume.
+
+#   items:
+#     - name: Example Awared One
+#       awarder: by Example
+#       date: 2022
+#       link: '#'
+#       description: |
+#         It's my Example Awared One by Example.
+#     - name: Example Awared Two
+#       awarder: by Example
+#       date: 2022
+#       link:
+#       description: |
+#         It's my Example Awared Two by Example.
+
+# patent:
+#   show: true
+#   order: 9
+#   title: Patents
+#   description: |
+#     The patent section in a resume is a dedicated section where you can showcase any patents that you have been granted or are in the process of obtaining. This section is particularly relevant for individuals who work in scientific or technical fields, as well as for individuals who have developed innovative products or technologies.
+
+#     In this section, you should list the title of the patent, the name of the inventors, the patent number, and the date it was granted. If the patent is pending, you can indicate that it is "pending" or "in review." You may also want to provide a brief description of the technology or invention that the patent covers.
+
+#     Including a patent section in your resume can help demonstrate your expertise and accomplishments in your field, and can help you stand out from other candidates. However, if you do not have any patents to list, it is not necessary to include this section in your resume.
+
+#     Template for a pending patent:
+
+#     + [Inventor Name]. [Pursued Year]. [Title]. [Patent Number], filed [Submitted Date]. Patent pending.
+
+#     Template for an approved patent:
+
+#     + [Inventor Name]. [Pursued Year]. [Title]. [Patent Number], filed [Submitted Date], [Received Date].
+
+#     The following are some examples of patent formats.
+
+#     + Foo Bar. 2022. Example patent name one. US 123456, filed Oct 3, 2022. Patent pending.
+#     + Foo Bar. 2022. Example patent name two. US 654321, filed Oct 3, 2022, and issued Nov 15, 2022.
+
+organization:
+  show: true
+  order: 10
+  title: Organizations
+  description: Voluntary activities undertaken to support the community and charitable causes.
+  items:
+    - organization: 1st Baldwyns Scout Group
+      role: Trustee & Group Lead Volunteer
+      date: 2024 - Present
+      url: https://www.scouts.org.uk/
+      description: |
+        Acting as a Charity Trustee and Group Lead Volunteer for the 1st Baldwyns Scouts.
+
+    - organization: "1st Baldwyns Park Scout and Guides Group (Charity number: 303501)"
+      role: Trustee
+      date: 2024 - Present
+      url: https://www.scouts.org.uk/
+      description: |
+        Acting as a Charity Trustee and board member for the 1st Baldwyns Park Scout and Guides Group, this is an external charity which owns and operates   runs all of the facilities for the combined group along with supporting a range of community and educational endeavours to enable the community to use and enjoy the facilities.
+
+# language:
+#   show: true
+#   order: 11
+#   title: Languages
+#   description: |
+#     The languages section in a resume typically includes information about your proficiency in different languages. This section can be particularly important if you are applying for a job that requires fluency or proficiency in a specific language.
+
+#     It's important to be honest about your language proficiency in your resume. If you overstate your abilities, it could lead to problems during the interview process or on the job. If you have taken language courses or earned language certifications, you can also include this information in the languages section of your resume.
+
+#   items:
+#     - idiom: Chinese
+#       level: Native
+#     - idiom: English
+#       level: Professional
+
+# interest:
+#   show: false
+#   order: 12
+#   title: Interests
+#   description:
+
+
+# evaluation:
+#   show: true
+#   order: 13
+#   title: Self-evaluation
+#   description: |
+#     The self-evaluation section in a resume is a section where you can evaluate and assess your own skills, strengths, and weaknesses. It is typically a short paragraph or bullet points at the end of your resume, which provides a personal perspective on your abilities and how they align with the requirements of the job.
+
+#     In this section, you can highlight your achievements, areas of expertise, and any unique qualities or experiences that set you apart from other candidates. You can also mention areas where you are looking to improve or gain further experience.
+
+#     A well-crafted self-evaluation section can demonstrate your self-awareness and confidence in your abilities, as well as your willingness to continuously learn and grow. However, it is important to be honest and avoid over-inflating your skills or qualifications, as this can negatively impact your credibility and the hiring manager's impression of you.
+
+reference:
+  show: true
+  order: 14
+  title: References
+  description: |
+    References are available upon request.
+#     It's important to note that including a reference section in a resume is not always necessary, and some employers may prefer to request references separately. If you do choose to include a reference section, it should typically be located at the end of your resume.
+
+#     When listing references, be sure to include the individual's name, job title, company name, phone number, and email address. It's also a good idea to ask for the individual's permission before listing them as a reference, and to let them know what kind of job you are applying for so they can speak to your relevant skills and experience.
+
+#     It's important to choose references who can provide a positive and comprehensive evaluation of your work. Avoid listing family members or friends as references, and instead focus on individuals who can speak to your professional abilities and accomplishments.
+
+#   items:
+#     - name: Foo One
+#       link: '#'
+#       title: Backend Developer
+#       institution: Second Company
+#       address: 1234 Example St, XXX, XY 11111
+#       email: foo.one@example.com
+#       phone: 111-222-333
+#       description: |
+#         Foo One was my colleague in Second Company.
+
+#     - name: Bar Two
+#       link:
+#       title: Professor
+#       institution: Example University
+#       address: 4321 Example St, YYY, XY 22222
+#       email: bar.two@example.com
+#       phone: 444-555-666
+#       description: |
+#         Bar Two was my advisor at Example University.
+
+close: <strong>Sorry, my resume has been hidden.</strong>

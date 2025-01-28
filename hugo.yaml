@@ -1,0 +1,37 @@
+baseURL:
+disableKinds: [section, taxonomy, term, RSS, sitemap, 404]
+enableRobotsTXT: true
+
+title: Online Resume
+theme: online-resume
+
+markup/goldmark/renderer/unsafe: true   # allow HTML tags in markdown
+
+params:
+  # Privacy
+  open: true                # show or hide your resume
+  allowSearchEngines: true  # allow your resume indexing by search engine, 'true' or 'false'
+  description:              # your resume description
+  openGraph:
+    enable: true                # enable open graph meta tags
+    image: /images/profile.png  # path or link to the open graph image
+  # Style
+  dateFormat: 2006-01-02    # date format
+  themeColor: "#1DA1F2"     # your favorite theme color
+  contactDelimiter: "·"     # contact delimiter, '·', '/' or '|'
+  sectionIcon: true         # section title icon, 'true' or 'false'
+  sectionTitle: uppercase   # section title style, 'uppercase', 'lowercase', 'capitalize' or 'none'
+  sectionAlign: start       # section title align, 'start', 'end' or 'center'
+  sectionLine: dashed       # section title line, 'solid', 'dashed' or 'none'
+  sectionBackground: false  # section title backound, 'true' or 'false'
+  skillLevelIcon: lightbulb # skill rate icon, 'heart', 'star', 'circle' or 'lightbulb'
+  linkIcon: true            # show link icon, 'true' or 'false'
+  siteFooter: true          # show site footer, 'true' or 'false'
+  # Analytics
+  analytics:
+    google:                 # google
+    cloudflare:             # cloudflare
+    umami:                  # umami
+      script:
+      websiteID:
+      domains:
