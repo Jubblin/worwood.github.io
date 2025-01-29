@@ -15,7 +15,7 @@ contact:
   phone: +44 7771 662880  # phone number, the format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
   website: worwood.com      # site link without schema, like example.com, will automatically prepend "https://"
 
-  gender:                   # gender or pronoun
+  gender: he/him                  # gender or pronoun
   birthday:                 # birthday
   nationality: UK              # nationality
   visa:                     # passport visa
@@ -25,7 +25,7 @@ contact:
   # Please copy the <> part of the comment in the link to your profile on the relevant site and paste it here.
 
   # programming
-  github: https://github.com/Jubblin                   # 
+  github: Jubblin                   # 
   gitlab:                   # https://gitlab.com/<username>
   bitbucket:                # https://bitbucket.com/<username>
   git:                      # selfhost git site link without schema "https://"
@@ -60,7 +60,7 @@ contact:
   producthunt:              # https://www.producthunt.com/@<username>
 
   # cv
-  linkedin: https://www.linkedin.com/in/richardworwood  # https://linkedin.com/in/<username>
+  linkedin: richardworwood  # https://linkedin.com/in/<username>
   indeed:                   # https://my.indeed.com/p/<id>
   xing:                     # https://www.xing.com/profile/<username>
   fiverr:                   # https://www.fiverr.com/<username>
