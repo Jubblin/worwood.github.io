@@ -1,103 +1,103 @@
 meta:
-  direction: ltr            # text direction, "ltr" (like English) or "rtl" (like Arabic), default is "ltr"
-  language: en              # text language, the value is HTML lang attribute value, default is "en"
+  direction: ltr # text direction, "ltr" (like English) or "rtl" (like Arabic), default is "ltr"
+  language: en # text language, the value is HTML lang attribute value, default is "en"
 
 basic:
-  name: Richard Worwood                      # name
-  title: Senior Infrastructure Architect     # job title 
+  name: Richard Worwood # name
+  title: Senior Infrastructure Architect # job title
   avatar:
-    show: true                       # show or hide avatar
-    path: /images/profile.png        # file path or link to your avatar
+    show: true # show or hide avatar
+    path: /images/profile.png # file path or link to your avatar
 
 contact:
-  location: London, England  # location, text or markdown link syntax
-  email: richard@worwood.com     # email address
-  phone: +44 7771 662880  # phone number, the format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
-  website: worwood.com      # site link without schema, like example.com, will automatically prepend "https://"
+  location: London, England # location, text or markdown link syntax
+  email: richard@worwood.com # email address
+  phone: +44 7771 662880 # phone number, the format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
+  website: worwood.com # site link without schema, like example.com, will automatically prepend "https://"
 
-  gender: he/him                  # gender or pronoun
-  birthday:                 # birthday
-  nationality: UK              # nationality
-  visa:                     # passport visa
-  drivinglicense: Full, Clean           # driving licence
+  gender: he/him # gender or pronoun
+  birthday: # birthday
+  nationality: UK # nationality
+  visa: # passport visa
+  drivinglicense: Full, Clean # driving licence
 
   # ! Do not paste the link directly.
   # Please copy the <> part of the comment in the link to your profile on the relevant site and paste it here.
 
   # programming
-  github: Jubblin                   # 
-  gitlab:                   # https://gitlab.com/<username>
-  bitbucket:                # https://bitbucket.com/<username>
-  git:                      # selfhost git site link without schema "https://"
-  leetcode:                 # https://leetcode.com/<username>
-  codeforces:               # https://codeforces.com/profile/<username>
-  codewars:                 # https://www.codewars.com/users/<username>
-  topcoder:                 # https://profiles.topcoder.com/<username>
-  huggingface:              # https://huggingface.co/<username>
-  codepen:                  # https://codepen.io/<username>
-  tryhackme:                # https://tryhackme.com/p/<username>
+  github: Jubblin #
+  gitlab: # https://gitlab.com/<username>
+  bitbucket: # https://bitbucket.com/<username>
+  git: # selfhost git site link without schema "https://"
+  leetcode: # https://leetcode.com/<username>
+  codeforces: # https://codeforces.com/profile/<username>
+  codewars: # https://www.codewars.com/users/<username>
+  topcoder: # https://profiles.topcoder.com/<username>
+  huggingface: # https://huggingface.co/<username>
+  codepen: # https://codepen.io/<username>
+  tryhackme: # https://tryhackme.com/p/<username>
 
   # research
-  googlescholar:            # https://scholar.google.com/citations?user=<username>
-  researchgate:             # https://www.researchgate.net/profile/<username>
-  orcid:                    # https://orcid.org/<id>
-  figshare:                 # https://figshare.com/authors/<name/id>
-  kaggle:                   # https://www.kaggle.com/<username>
+  googlescholar: # https://scholar.google.com/citations?user=<username>
+  researchgate: # https://www.researchgate.net/profile/<username>
+  orcid: # https://orcid.org/<id>
+  figshare: # https://figshare.com/authors/<name/id>
+  kaggle: # https://www.kaggle.com/<username>
 
   # writing
-  medium:                   # https://medium.com/@<username>
-  wordpress:                # https://<username>.wordpress.com
-  blogger:                  # https://<username>.blogspot.com
-  devto:                    # https://dev.to/<username>
+  medium: # https://medium.com/@<username>
+  wordpress: # https://<username>.wordpress.com
+  blogger: # https://<username>.blogspot.com
+  devto: # https://dev.to/<username>
 
   # creativity
-  figma:                    # https://www.figma.com/@<username>
-  behance:                  # https://www.behance.net/<username>
-  dribbble:                 # https://dribbble.com/<username>
-  artstation:               # https://www.artstation.com/<username>
-  pixiv:                    # https://www.pixiv.net/users/<id>
-  pinterest:                # https://www.pinterest.com/<username>
-  producthunt:              # https://www.producthunt.com/@<username>
+  figma: # https://www.figma.com/@<username>
+  behance: # https://www.behance.net/<username>
+  dribbble: # https://dribbble.com/<username>
+  artstation: # https://www.artstation.com/<username>
+  pixiv: # https://www.pixiv.net/users/<id>
+  pinterest: # https://www.pinterest.com/<username>
+  producthunt: # https://www.producthunt.com/@<username>
 
   # cv
-  linkedin: richardworwood  # https://linkedin.com/in/<username>
-  indeed:                   # https://my.indeed.com/p/<id>
-  xing:                     # https://www.xing.com/profile/<username>
-  fiverr:                   # https://www.fiverr.com/<username>
-  freelancer:               # https://www.freelancer.com/u/<username>
+  linkedin: richardworwood # https://linkedin.com/in/<username>
+  indeed: # https://my.indeed.com/p/<id>
+  xing: # https://www.xing.com/profile/<username>
+  fiverr: # https://www.fiverr.com/<username>
+  freelancer: # https://www.freelancer.com/u/<username>
 
   # chat
-  wechat:                   # wechat id, text or markdown link syntax
-  whatsapp:                 # https://wa.me/<number>
-  telegram:                 # https://t.me/<username>
-  messenger:                # https://m.me/<username>
-  line:                     # https://line.me/R/ti/p/@<lineid>
-  viber:                    # https://vb.me/<username>
-  threema:                  # https://threema.id/<userid>
-  signal:                   # signal username, text or markdown link syntax
-  wire:                     # wire username, text or markdown link syntax
+  wechat: # wechat id, text or markdown link syntax
+  whatsapp: # https://wa.me/<number>
+  telegram: # https://t.me/<username>
+  messenger: # https://m.me/<username>
+  line: # https://line.me/R/ti/p/@<lineid>
+  viber: # https://vb.me/<username>
+  threema: # https://threema.id/<userid>
+  signal: # signal username, text or markdown link syntax
+  wire: # wire username, text or markdown link syntax
 
   # social
-  stackoverflow:            # https://stackoverflow.com/users/<id>
-  stackexchange:            # https://stackexchange.com/users/<id>
-  quora:                    # https://www.quora.com/profile/<username>
-  zhihu:                    # https://www.zhihu.com/people/<username>
-  goodreads:                # https://www.goodreads.com/user/show/<username>
-  strava:                   # https://www.strava.com/athletes/<id>
-  wikipedia:                # https://www.wikipedia.org/wiki/User:<username>
-  twitter:                  # https://twitter.com/<username>
-  x:                        # https://x.com/<username>
-  mastodon:                 # text, the format must be like "username@yourserver.com"
-  threads:                  # https://www.threads.net/@<username>
-  vk:                       # https://vk.com/<username>
-  weibo:                    # weibo username, text or markdown link syntax
-  instagram:                # https://instagram.com/<username>
-  unsplash:                 # https://unsplash.com/@<username>
-  _500px:                   # https://500px.com/p/<username>
-  youtube:                  # https://www.youtube.com/@<username>
-  tiktok:                   # https://www.tiktok.com/@<username>
-  snapchat:                 # https://www.snapchat.com/add/<username>
-  twitch:                   # https://www.twitch.tv/<username>
+  stackoverflow: # https://stackoverflow.com/users/<id>
+  stackexchange: # https://stackexchange.com/users/<id>
+  quora: # https://www.quora.com/profile/<username>
+  zhihu: # https://www.zhihu.com/people/<username>
+  goodreads: # https://www.goodreads.com/user/show/<username>
+  strava: # https://www.strava.com/athletes/<id>
+  wikipedia: # https://www.wikipedia.org/wiki/User:<username>
+  twitter: # https://twitter.com/<username>
+  x: # https://x.com/<username>
+  mastodon: # text, the format must be like "username@yourserver.com"
+  threads: # https://www.threads.net/@<username>
+  vk: # https://vk.com/<username>
+  weibo: # weibo username, text or markdown link syntax
+  instagram: # https://instagram.com/<username>
+  unsplash: # https://unsplash.com/@<username>
+  _500px: # https://500px.com/p/<username>
+  youtube: # https://www.youtube.com/@<username>
+  tiktok: # https://www.tiktok.com/@<username>
+  snapchat: # https://www.snapchat.com/add/<username>
+  twitch: # https://www.twitch.tv/<username>
 
 profile:
   show: true
@@ -127,16 +127,16 @@ experience:
     # Jobs
     # Senior Infrastructure Architect
     - company: Endava UK
-      link: '#Endava'
+      link: "#Endava"
       tags: Full-time
       role: Senior Infrastructure Architect
       location: Hybrid/London
       date: August, 2022 - Present
-      description: Working as a Cloud Architect and Tech Lead across a number of Workstreams, delivering secure unified Containerisation solutions using Kubernetes leveraging Anthos, AKS & EKS.
+      description: Developed and led a strategic vision for Kubernetes and Container Developer Productivity across Cloud Providers that aligned with the customer's goals, objectives, security and compliance requirements.\n\nLed development and execution of strategy for Kubernetes and Container platform teams, aligning with strategic business objectives, while improving productivity and developer experience both without and within.\nLed incident response efforts for major system outages, ensuring rapid resolution and communication with stakeholders.\nEnsured that all development operations complied with relevant security standards and regulations, mitigating risks and protecting the organization's assets.\nEngaged in and improved the whole lifecycle of services—from inception and design, through to deployment, operation, and refinement.\nSupported services before they went live through activities such as system design consulting, developing software platforms and frameworks, capacity planning and launch reviews.\nLed, mentored and grew a high-performing global team, ensuring they had the resources and support needed to excel.\nWorked closely with software engineering, security and other departments to ensure seamless integration and alignment of industry best practices across the organisation.\nStayed abreast of the latest industry trends and technologies, advocating for and implementing innovative solutions that drove efficiency and effectiveness.
 
     # Principal Consultant
     - company: Devoteam
-      link: '#'
+      link: "#"
       tags: Full-time
       role: Principal Consultant
       location: Hybrid/London
@@ -145,10 +145,10 @@ experience:
 
     # Senior DevOps Consultant
     - company: Valtech
-      link: '#Valtech'
+      link: "#Valtech"
       tags: Full-time
       role: Senior DevOps Consultant
-      location: London, Manchester, Bristol, Brussels, Dusseldorf 
+      location: London, Manchester, Bristol, Brussels, Dusseldorf
       date: June 2008 - May 2010
       description: |
         + TECH & METHODS: Azure, GCP, AWS (EKS, RDS & EFS), Kong, TLS, Bamboo, Jenkins, Bitbucket, Gitlab, Github, Jenkins, SonarQube, Nexus, VSTS, Artifactory, Istio, ELK, ECK, Prometheus/Grafana, WAFs, Ansible, Terraform, Packer, Puppet, Powershell & Powershell DSC, IIS, Nginx, Apache, Windows Server, Ubuntu, Centos, RHEL, React, SpringBoot, .Net Web, .Net Core
@@ -156,15 +156,16 @@ experience:
       items:
         - client: Toyota Motors
           project: Onboard Connected Services
-          description: Project to deliver services for delivery within the manufacturers vehicles to extend and enhance legacy solutions which have historically been inflexible. This gives the customers smart functionality in there vehicles but creates new revenue streams for the Manufacturer.
-            Implemented a Kubernetes microservices architecture utilising React based front end and Springboot intergration services. 
+          description:
+            Project to deliver services for delivery within the manufacturers vehicles to extend and enhance legacy solutions which have historically been inflexible. This gives the customers smart functionality in there vehicles but creates new revenue streams for the Manufacturer.
+            Implemented a Kubernetes microservices architecture utilising React based front end and Springboot intergration services.
 
         - client: Department for Transport
           project: Blue Badge system
-          description: Project to deliver a suite of Services to provide a system to manage the UK's Blue Badge application, eligibility and issuance requirements. 
-          
+          description: Project to deliver a suite of Services to provide a system to manage the UK's Blue Badge application, eligibility and issuance requirements.
+
         - client: Major British Airline
-          project: Consultancy Engagement to audit, rationalise and implement DevOps and Agile working into existing teams 
+          project: Consultancy Engagement to audit, rationalise and implement DevOps and Agile working into existing teams
 
         - client: Department for Work and Pensions
           project: New Style Job Seekers Allowance
@@ -172,7 +173,7 @@ experience:
 
         - client: OFGEM
           project: Proof of Concept Secure Data Exchange
-          description: Project to implement a Proof of Concept secure data exchange to be used to ingest data into an organisational data hub. 
+          description: Project to implement a Proof of Concept secure data exchange to be used to ingest data into an organisational data hub.
 
         - client: Delonghi
           project: Delonghi Retail
@@ -180,7 +181,7 @@ experience:
 
     # Principal Technical Consultant
     - company: TDB Fusion
-      link: '#'
+      link: "#"
       tags: Full-time
       role: Principal Technical Consultant
       location: Hybrid/London/Reading, International travel
@@ -192,7 +193,7 @@ experience:
 
     #  Technical Consultant
     - company: Thrupoint
-      link: '#'
+      link: "#"
       tags: Contract
       role: Technical Consultant
       location: Warsaw & Poznan, Poland
@@ -202,7 +203,7 @@ experience:
 
     # Support Engineer
     - company: Orchestream
-      link: '#'
+      link: "#"
       tags: Full-time
       role: Support Engineer
       location: London, International travel
@@ -212,7 +213,7 @@ experience:
 
     # Operational Technical Design Architect
     - company: Cap Gemini/ICL
-      link: '#'
+      link: "#"
       tags: Full-time
       role: Operational Technical Design Architect
       location: London, UK travel
@@ -222,14 +223,13 @@ experience:
 
     # Senior Architect
     - company: Info'Products
-      link: '#'
+      link: "#"
       tags: Full-time
       role: Senior Architect
       location: UK Wide
       date: 1995 - 1998
       description: Support Engineer based on a variety of customer sites across the UK working in roles ranging from Hardware Engineer to Senior Architect by way of Team Leader.
       skills: Technical Requirements · Soft Skills · Problem Solving
-
 
 # project:
 #   show: true
@@ -481,7 +481,6 @@ organization:
 #   title: Interests
 #   description:
 
-
 # evaluation:
 #   show: true
 #   order: 13
@@ -500,7 +499,6 @@ reference:
   description: |
     References are available upon request.
 #     It's important to note that including a reference section in a resume is not always necessary, and some employers may prefer to request references separately. If you do choose to include a reference section, it should typically be located at the end of your resume.
-
 #     When listing references, be sure to include the individual's name, job title, company name, phone number, and email address. It's also a good idea to ask for the individual's permission before listing them as a reference, and to let them know what kind of job you are applying for so they can speak to your relevant skills and experience.
 
 #     It's important to choose references who can provide a positive and comprehensive evaluation of your work. Avoid listing family members or friends as references, and instead focus on individuals who can speak to your professional abilities and accomplishments.
