@@ -17,7 +17,7 @@
     }
   },
   "forwardPorts": [1313],
-  "postCreateCommand": "hugo server",
+  "postCreateCommand": "hugo version",
   "remoteUser": "vscode",
   "mounts": [
     // "source=${localEnv:HOME}/.ssh,target=/vscode/.ssh,type=bind,consistency=cached"
