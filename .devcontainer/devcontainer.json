@@ -20,7 +20,6 @@
   "postCreateCommand": "hugo version",
   "remoteUser": "vscode",
   "mounts": [
-    // "source=${localEnv:HOME}/.ssh,target=/vscode/.ssh,type=bind,consistency=cached"
-    "source=/Users/richardw/.ssh,target=/vscode/.ssh,type=bind"
+    "source=/Users/richardw/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
   ]
 }
