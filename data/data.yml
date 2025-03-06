@@ -266,55 +266,46 @@ experience:
 #         + First
 #         + Second
 
-# skill:
-#   show: true
-#   order: 4
-#   title: Skills
-#   description: |
-#     The skills section in a resume is a dedicated section where you can list out the various skills that you possess that are relevant to the job you are applying for. This section allows you to highlight your strengths and demonstrate your capabilities to potential employers.
+skill:
+  show: true
+  order: 1
+  title: Technical Skills
+  # description: |
+  #   The skills section in a resume is a dedicated section where you can list out the various skills that you possess that are relevant to the job you are applying for. This section allows you to highlight your strengths and demonstrate your capabilities to potential employers.
+  #   The skills section can include both hard skills and soft skills. Hard skills are specific technical abilities or knowledge related to a particular job or industry, such as proficiency in programming languages or experience with certain software programs. Soft skills are more general personal traits and abilities, such as communication skills, leadership, problem-solving, or teamwork.
+  #   When crafting your skills section, it's important to tailor it to the specific job you are applying for, and only include skills that are relevant to the position. This can help catch the attention of the hiring manager and demonstrate that you have the qualifications necessary to succeed in the role.
+  #   There are multiple ways to present your skills here. One way is to show them in a rating format. Another way is to group them together. Alternatively, you can use markdown to format it in a way that you prefer.
 
-#     The skills section can include both hard skills and soft skills. Hard skills are specific technical abilities or knowledge related to a particular job or industry, such as proficiency in programming languages or experience with certain software programs. Soft skills are more general personal traits and abilities, such as communication skills, leadership, problem-solving, or teamwork.
+  groups:
+    - name: Cloud Native
+      item:
+        - Architecture
+        - CNI's/Networking
+        - GitOps/DevOps
+        - Kubernetes
+        - Terraform
 
-#     When crafting your skills section, it's important to tailor it to the specific job you are applying for, and only include skills that are relevant to the position. This can help catch the attention of the hiring manager and demonstrate that you have the qualifications necessary to succeed in the role.
+    - name: AWS
+      item:
+        - EKS
+        - ECS
+        - EC2
+        - RDS
+        - Lambda
 
-#     There are multiple ways to present your skills here. One way is to show them in a rating format. Another way is to group them together. Alternatively, you can use markdown to format it in a way that you prefer.
+    - name: Azure
+      item:
+        - AKS
+        - ACA
+        - Azure SQL
+        - Devops
 
-#   items:
-#     - name: Skill A
-#       level: 5
-#     - name: Skill B
-#       level: 4
-#     - name: Skill C
-#       level: 3
-#     - name: Skill D
-#       level: 4
-#     - name: Skill E
-#       level: 3
-#     - name: Skill F
-#       level: 1
-#     - name: Skill G
-#       level: 4
-#     - name: Skill H
-#       level: 4
-#     - name: Skill I
-#       level: 3
-
-#   groups:
-#     - name: Group A Skills
-#       item:
-#         - Skill A
-#         - Skill B
-#         - Skill C
-#         - Skill D
-#     - name: Group B Skills
-#       item:
-#         - Skill E
-#         - Skill F
-#         - Skill G
-#     - name: Group C Skills
-#       item:
-#         - Skill H
-#         - Skill I
+    - name: Google
+      item:
+        - GKE
+        - Anthos
+        - Cloud Run
+        - Cloud Composer
 
 # education:
 #   show: true
