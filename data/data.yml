@@ -280,18 +280,18 @@ skill:
     - name: Cloud Native
       item:
         - Architecture
-        - CNI's/Networking
-        - GitOps/DevOps
         - Kubernetes
+        - GitOps/DevOps/DevSecOps
+        - CNI's/Networking
         - Terraform
 
     - name: AWS
       item:
         - EKS
         - ECS
+        - Lambda
         - EC2
         - RDS
-        - Lambda
 
     - name: Azure
       item:
