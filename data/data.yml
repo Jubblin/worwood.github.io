@@ -443,18 +443,18 @@ organization:
   description: Voluntary activities undertaken to support the community and charitable causes.
   items:
     - organization: 1st Baldwyns Scout Group
-      role: Trustee & Group Lead Volunteer
+      role: Group Lead Volunteer & Trustee
       date: 2024 - Present
       url: https://www.scouts.org.uk/
       description: |
-        Acting as a Charity Trustee and Group Lead Volunteer for the 1st Baldwyns Scouts.
+        Acting as the Group Lead Volunteer and a Charity Trustee for the 1st Baldwyns Scouts.
 
     - organization: "1st Baldwyns Park Scout and Guides Group (Charity number: 303501)"
       role: Trustee
       date: 2024 - Present
       url: https://www.scouts.org.uk/
       description: |
-        Acting as a Charity Trustee and board member for the 1st Baldwyns Park Scout and Guides Group, this is an external charity which owns and operates   runs all of the facilities for the combined group along with supporting a range of community and educational endeavours to enable the community to use and enjoy the facilities.
+        Acting as a Charity Trustee and board member for the 1st Baldwyns Park Scout and Guides Group, this is an external charity which owns and operates all of the facilities for the combined group along with supporting a range of community and educational endeavours to enable the community to use and enjoy the facilities.
 
 # language:
 #   show: true
