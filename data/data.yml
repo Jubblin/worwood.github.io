@@ -283,7 +283,7 @@ skill:
         - Kubernetes
         - GitOps/DevOps/DevSecOps
         - CNI's/Networking
-        - Terraform
+        - IaC
 
     - name: AWS
       item:
