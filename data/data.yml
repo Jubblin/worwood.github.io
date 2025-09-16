@@ -4,7 +4,7 @@ meta:
 
 basic:
   name: Richard Worwood # name
-  title: Senior Infrastructure Architect # job title
+  title: Senior Cloud Infrastructure Architect # job title
   avatar:
     show: true # show or hide avatar
     path: /images/profile.jpeg # file path or link to your avatar
@@ -133,11 +133,25 @@ experience:
       location: Hybrid/London
       date: August, 2022 - Present
       description: Working initially on buy and sale side engagements as part of Endava's internal and external investment management operations. 
-      
+      section: Customer Projects
+      items:
+        - client: "'Under NDA'"
+          project: Secure financial trading messaging platform
+          description:
+            Working as Lead Cloud Architect to deliver a secure financial trading messaging platform within GCP, utilising a Kubernetes microservices architecture and PubSub messaging connecting to customers and partners over IPSec vpns, integrating with their existing systems. Migrating from legacy on-premise systems to a cloud based solution.
 
-        Assigned to a long term consultancy role where I am leading the vision and delivery of Kubernetes and Container platforms across all major Cloud Providers.
-        Led development and execution of strategy for Kubernetes and Container platform teams, aligning with strategic business objectives, while improving productivity and developer experience both without and within.
-        Led, mentored and grew a high-performing global team, ensuring they had the resources and support needed to excel.  
+        - client: LSEG
+          project: Kubernetes and Container Platforms
+          description:
+            Assigned to a long term consultancy role where I am leading the vision and delivery of Kubernetes and Container platforms across all major Cloud Providers.
+            Led development and execution of strategy for Kubernetes and Container platform teams, aligning with strategic business objectives, while improving productivity and developer experience both without and within.
+
+            Led, mentored and grew a high-performing global team, ensuring they had the resources and support needed to excel.  
+
+        - client: Various
+          project: Short form buy & sale side engagements
+          description:
+            Working on buy and sale side engagements as part of Endava's internal and external investment management operations. Analysing business capabilities, strategies, process and procedures to understand there maturity and readiness for sale and buy transactions across a range of technology companies across Europe.
 
     # Principal Consultant
     - company: Devoteam
@@ -284,6 +298,7 @@ skill:
         - GitOps/DevOps/DevSecOps
         - CNI's/Networking
         - IaC
+        - CI/CD "Jenkins, GitLab, BitBucket, Github"
 
     - name: AWS
       item:
@@ -304,6 +319,17 @@ skill:
       item:
         - GKE
         - Anthos
+        - NCC
+        - PubSub
+        - HA-VPN
+        - Networking
+        - Monitoring
+        - Storage
+        - Compute
+        - Functions
+        - BigQuery
+        - Dataflow
+        - Data Loss Prevention
         - Cloud Run
         - Cloud Composer
 
