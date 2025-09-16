@@ -1,5 +1,5 @@
 baseURL: https://worwood.com
-disableKinds: [section, taxonomy, term, RSS, sitemap, 404]
+disableKinds: [taxonomy, term, RSS, sitemap, 404]
 enableRobotsTXT: true
 
 title: Richard Worwood
