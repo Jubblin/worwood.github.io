@@ -104,7 +104,7 @@ profile:
   order: 1
   title: Profile
   description: |
-    A highly experienced Solutions Consultant with a diverse background in Finance, Enterprise, and Telecommunications. They possess expertise in Pre/Post-sales Support, Product/Program Management, Project Management, Services Sales, Consultancy, and Training. They are proficient in working with both technical and non-technical stakeholders and adept at resolving complex issues throughout the sales and delivery cycles. They are committed to remaining current with the latest technologies and are a dedicated and motivated team player.
+    A senior technical leader and Cloud Architect with deep expertise in cloud-native technologies, distributed systems, and platform engineering. They combine hands-on technical excellence with strategic vision, leading the design and delivery of complex infrastructure solutions across major cloud providers. With a proven track record of building and mentoring high-performing technical teams, they excel at translating business requirements into scalable, resilient architectures while maintaining a strong focus on developer experience and operational excellence. They are committed to technical innovation, continuous learning, and driving technical excellence through both individual contribution and technical leadership.
 
 experience:
   show: true
@@ -132,13 +132,12 @@ experience:
       role: Senior Infrastructure Architect
       location: Hybrid/London
       date: August, 2022 - Present
-      description: Working initially on buy and sale side engagements as part of Endava's internal and external investment management operations. 
+      description: Leading the design and delivery of cloud-native infrastructure solutions across major cloud providers. Combining hands-on technical architecture with strategic platform engineering, mentoring technical teams, and driving technical excellence in complex enterprise environments.
       section: Customer Projects
       items:
         - client: "'Under NDA'"
           project: Secure financial trading messaging platform
-          description:
-            Working as Lead Cloud Architect to deliver a secure financial trading messaging platform within GCP, utilising a Kubernetes microservices architecture and PubSub messaging connecting to customers and partners over IPSec vpns, integrating with their existing systems. Migrating from legacy on-premise systems to a cloud based solution.
+          description: Working as Lead Cloud Architect to deliver a secure financial trading messaging platform within GCP, utilising a Kubernetes microservices architecture and PubSub messaging connecting to customers and partners over IPSec vpns, integrating with their existing systems. Migrating from legacy on-premise systems to a cloud based solution.
 
         - client: LSEG
           project: Kubernetes and Container Platforms
@@ -146,12 +145,11 @@ experience:
             Assigned to a long term consultancy role where I am leading the vision and delivery of Kubernetes and Container platforms across all major Cloud Providers.
             Led development and execution of strategy for Kubernetes and Container platform teams, aligning with strategic business objectives, while improving productivity and developer experience both without and within.
 
-            Led, mentored and grew a high-performing global team, ensuring they had the resources and support needed to excel.  
+            Led, mentored and grew a high-performing global team, ensuring they had the resources and support needed to excel.
 
         - client: Various
           project: Short form buy & sale side engagements
-          description:
-            Working on buy and sale side engagements as part of Endava's internal and external investment management operations. Analysing business capabilities, strategies, process and procedures to understand there maturity and readiness for sale and buy transactions across a range of technology companies across Europe.
+          description: Working on buy and sale side engagements as part of Endava's internal and external investment management operations. Analysing business capabilities, strategies, process and procedures to understand there maturity and readiness for sale and buy transactions across a range of technology companies across Europe.
 
     # Principal Consultant
     - company: Devoteam
@@ -160,7 +158,7 @@ experience:
       role: Principal Consultant
       location: Hybrid/London
       date: April 2021 - July 2022
-      description: Working as an Architect for a Tier 1 Market Data Provider on a major initiative to transform their market data platform to hybrid Bare-metal and Cloud Kubernetes environments.
+      description: Led technical architecture and platform transformation for a Tier 1 Market Data Provider, designing and implementing hybrid Bare-metal and Cloud Kubernetes environments. Provided technical leadership, architecture guidance, and hands-on implementation to modernize critical market data infrastructure.
 
     # Senior DevOps Consultant
     - company: Valtech
@@ -170,7 +168,9 @@ experience:
       location: London, Manchester, Bristol, Brussels, Dusseldorf
       date: June 2008 - May 2010
       description: |
-        + TECH & METHODS: Azure, GCP, AWS (EKS, RDS & EFS), Kong, TLS, Bamboo, Jenkins, Bitbucket, Gitlab, Github, Jenkins, SonarQube, Nexus, VSTS, Artifactory, Istio, ELK, ECK, Prometheus/Grafana, WAFs, Ansible, Terraform, Packer, Puppet, Powershell & Powershell DSC, IIS, Nginx, Apache, Windows Server, Ubuntu, Centos, RHEL, React, SpringBoot, .Net Web, .Net Core
+        Led DevOps transformation initiatives and platform engineering across multiple enterprise clients. Designed and implemented cloud-native architectures, CI/CD pipelines, and infrastructure automation using modern tooling across Azure, GCP, and AWS. Mentored teams on DevOps practices and cloud adoption strategies.
+
+        Technologies: Azure, GCP, AWS (EKS, RDS & EFS), Kong, TLS, Bamboo, Jenkins, Bitbucket, Gitlab, Github, SonarQube, Nexus, VSTS, Artifactory, Istio, ELK, ECK, Prometheus/Grafana, WAFs, Ansible, Terraform, Packer, Puppet, Powershell & Powershell DSC, IIS, Nginx, Apache, Windows Server, Ubuntu, Centos, RHEL, React, SpringBoot, .Net Web, .Net Core
       section: Customer Projects
       items:
         - client: Toyota Motors
@@ -205,7 +205,7 @@ experience:
       role: Principal Technical Consultant
       location: Hybrid/London/Reading, International travel
       date: August, 2002 - July 2015
-      description: Networking and Systems specialist with 24 years technical, financial and managerial experience in both Enterprise and Telecoms sectors. Broad experience from Pre/Post Sales Support, Product/Program Management, Project Management, Services Sales, Consultancy and Training
+      description: Senior technical leader specializing in networking, systems architecture, and infrastructure design across Enterprise and Telecommunications sectors. Led technical strategy, architecture design, and platform development initiatives. Combined deep technical expertise with leadership responsibilities, mentoring technical teams and driving technical excellence in complex multi-vendor environments.
 
       specialties: Pre-sales, Post-sales, team development, product management, service management/development/pricing, professional services, project/program management, contract negotiation, technical training.
       skills: Self-healing · Technical Requirements · Cloud Strategy · Public Cloud · Emerging Technologies · Soft Skills · Business Requirements · Agile Methodologies · Problem Solving
@@ -217,7 +217,7 @@ experience:
       role: Technical Consultant
       location: Warsaw & Poznan, Poland
       date: May 2002 - July 2002
-      description: Engaged as part of a trans-national team to construct a countrywide IP VPN backbone network, based on Cisco's MPLS technology. The network was designed to enable Energis Poland to offer state-of-the art network services to enterprises, as well as wholesale IP transit for other service providers, such as ISPs and ASPs. The IP network, based on Cisco Multiprotocol Label Switching offers high-speed data transmission with Quality of Service (QoS). These services enabled the delivery of enhanced services for critical applications such as corporate management systems and made it possible to introduce new applications such as distance learning, IP telephony, video on demand into the Polish market.
+      description: Led technical design and implementation of a countrywide IP VPN backbone network using Cisco MPLS technology. Architected and delivered critical network infrastructure enabling enterprise services and wholesale IP transit. Provided technical leadership to a trans-national team, ensuring high-speed data transmission with Quality of Service (QoS) capabilities for mission-critical applications.
       skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving
 
     # Support Engineer
@@ -227,7 +227,7 @@ experience:
       role: Support Engineer
       location: London, International travel
       date: August 2002 - July 2015
-      description: As a Support Engineer at Orchestream I was responsible for the Pre & Post Sales Support of the whole range of Orchestream functionality, working closely with the Technical Consultants to assist in the Design and Deployment of customer projects. The customer projects involved IP based MPLS VPN & QoS networks using a variety of vendor routers. I have worked with major tier one Service Providers
+      description: Provided technical support and engineering expertise for Orchestream's product portfolio, collaborating with technical consultants on design and deployment of customer projects. Specialized in IP-based MPLS VPN and QoS network implementations across multiple vendor platforms. Worked with major tier one Service Providers to deliver complex network solutions.
       skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving
 
     # Operational Technical Design Architect
@@ -237,7 +237,7 @@ experience:
       role: Operational Technical Design Architect
       location: London, UK travel
       date: 1998 - 2001
-      description: As a Support Engineer at Orchestream I was responsible for the Pre & Post Sales Support of the whole range of Orchestream functionality, working closely with the Technical Consultants to assist in the Design and Deployment of customer projects. The customer projects involved IP based MPLS VPN & QoS networks using a variety of vendor routers. I have worked with major tier one Service Providers
+      description: Designed and architected operational technical solutions for enterprise clients, leading technical design initiatives and ensuring alignment between business requirements and technical implementation. Provided technical leadership in complex infrastructure projects, working across multiple customer sites to deliver scalable and reliable solutions.
       skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving
 
     # Senior Architect
@@ -247,7 +247,7 @@ experience:
       role: Senior Architect
       location: UK Wide
       date: 1995 - 1998
-      description: Support Engineer based on a variety of customer sites across the UK working in roles ranging from Hardware Engineer to Senior Architect by way of Team Leader.
+      description: Progressed through technical roles from Hardware Engineer to Senior Architect, leading technical teams and designing solutions across multiple customer sites. Provided technical leadership, architecture design, and hands-on implementation expertise for enterprise infrastructure projects.
       skills: Technical Requirements · Soft Skills · Problem Solving
 
 # project:
@@ -317,13 +317,9 @@ skill:
 
     - name: Google
       item:
-        - GKE
-        - Anthos
-        - NCC
+        - GKE/Anthos
+        - NCC/Networking
         - PubSub
-        - HA-VPN
-        - Networking
-        - Monitoring
         - Storage
         - Compute
         - Functions
