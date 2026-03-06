@@ -1,15 +1,22 @@
+# CSS Class Reference Guide:
+# Each YAML field is annotated with its corresponding CSS class selector.
+# Format: # CSS: .class-name or # CSS: .parent .child
+# Main wrapper: .wrapper
+# Section structure: section.{section-name} > .section-title > .section-content > .items > .item
+# See themes/online-resume/assets/sass/_base.scss for full CSS definitions
+
 meta:
   direction: ltr # text direction, "ltr" (like English) or "rtl" (like Arabic), default is "ltr"
   language: en # text language, the value is HTML lang attribute value, default is "en"
 
-basic:
-  name: Richard Worwood # name
-  title: Senior Cloud Infrastructure Architect # job title
-  avatar:
+basic: # CSS: .basic
+  name: Richard Worwood # CSS: .basic .header .name
+  title: Senior Cloud Infrastructure Architect # CSS: .basic .header .title
+  avatar: # CSS: .basic .avatar
     show: true # show or hide avatar
     path: /images/profile.jpeg # file path or link to your avatar
 
-contact:
+contact: # CSS: .basic .header .contact .contact-item
   location: London, England # location, text or markdown link syntax
   email: richard@worwood.com # email address
   phone: +44 7771 662880 # phone number, the format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
@@ -99,45 +106,34 @@ contact:
   snapchat: # https://www.snapchat.com/add/<username>
   twitch: # https://www.twitch.tv/<username>
 
-profile:
+profile: # CSS: section.profile
   show: true
   order: 1
-  title: Profile
-  description: |
+  title: Profile # CSS: .section-title h2
+  description: | # CSS: .section-content .description.markdown
     A senior technical leader and Cloud Architect with deep expertise in cloud-native technologies, distributed systems, and platform engineering. They combine hands-on technical excellence with strategic vision, leading the design and delivery of complex infrastructure solutions across major cloud providers. With a proven track record of building and mentoring high-performing technical teams, they excel at translating business requirements into scalable, resilient architectures while maintaining a strong focus on developer experience and operational excellence. They are committed to technical innovation, continuous learning, and driving technical excellence through both individual contribution and technical leadership.
 
-experience:
+experience: # CSS: section.experience
   show: true
   order: 2
-  title: Experience
-  description: |
+  title: Experience # CSS: .section-title h2
+  description: | # CSS: .section-content .description.markdown
 
-  items:
-    # - company: Endava UK
-    #   link: '#'
-    #   tags: Full-time
-    #   date: August, 2022  - Present
-    #   role: Backend Developer
-    #   location: Beijing
-    #   description: |
-    #     Your key responsibilities and achievements in the company.
-    #     + First
-    #     + Second
-
+  items: # CSS: .section-content .items .item
     # Jobs
     # Senior Infrastructure Architect
-    - company: Endava UK
+    - company: Endava UK # CSS: .item .row .company
       link: "#Endava"
-      tags: Full-time
-      role: Senior Infrastructure Architect
-      location: Hybrid/London
-      date: August, 2022 - Present
-      description: Leading the design and delivery of cloud-native infrastructure solutions across major cloud providers. Combining hands-on technical architecture with strategic platform engineering, mentoring technical teams, and driving technical excellence in complex enterprise environments.
-      section: Customer Projects
-      items:
-        - client: "'Under NDA'"
-          project: Secure financial trading messaging platform
-          description: Working as Lead Cloud Architect to deliver a secure financial trading messaging platform within GCP, utilising a Kubernetes microservices architecture and PubSub messaging connecting to customers and partners over IPSec vpns, integrating with their existing systems. Migrating from legacy on-premise systems to a cloud based solution.
+      tags: Full-time # CSS: .company small
+      role: Senior Infrastructure Architect # CSS: .item .row .role
+      location: Hybrid/London # CSS: .item .row .location
+      date: August, 2022 - Present # CSS: .item .row .date
+      description: Leading the design and delivery of cloud-native infrastructure solutions across major cloud providers. Combining hands-on technical architecture with strategic platform engineering, mentoring technical teams, and driving technical excellence in complex enterprise environments. # CSS: .item .description.markdown
+      section: Customer Projects # CSS: .sub-section-content .sub-section-title h3 (distinct style: middle font-size, bold weight, dashed border, text color)
+      items: # CSS: .sub-section-content .item
+        - client: "'Under NDA'" # CSS: .sub-section-content .item .row .client
+          project: Secure financial trading messaging platform # CSS: .sub-section-content .item .project
+          description: Lead Cloud Architect delivering a secure trade messaging platform within GCP, utilising an event based architecture leveraging GCP PubSub and GKE while delivering isolated infrastructure to clients and partners. # CSS: .sub-section-content .item .description.markdown
 
         - client: LSEG
           project: Kubernetes and Container Platforms
@@ -152,30 +148,30 @@ experience:
           description: Working on buy and sale side engagements as part of Endava's internal and external investment management operations. Analysing business capabilities, strategies, process and procedures to understand there maturity and readiness for sale and buy transactions across a range of technology companies across Europe.
 
     # Principal Consultant
-    - company: Devoteam
+    - company: Devoteam # CSS: .item .row .company
       link: "#"
-      tags: Full-time
-      role: Principal Consultant
-      location: Hybrid/London
-      date: April 2021 - July 2022
-      description: Led technical architecture and platform transformation for a Tier 1 Market Data Provider, designing and implementing hybrid Bare-metal and Cloud Kubernetes environments. Provided technical leadership, architecture guidance, and hands-on implementation to modernize critical market data infrastructure.
+      tags: Full-time # CSS: .company small
+      role: Principal Consultant # CSS: .item .row .role
+      location: Hybrid/London # CSS: .item .row .location
+      date: April 2021 - July 2022 # CSS: .item .row .date
+      description: Led technical architecture and platform transformation for a Tier 1 Market Data Provider, designing and implementing hybrid Bare-metal and Cloud Kubernetes environments. Provided technical leadership, architecture guidance, and hands-on implementation to modernize critical market data infrastructure. # CSS: .item .description.markdown
 
     # Senior DevOps Consultant
-    - company: Valtech
+    - company: Valtech # CSS: .item .row .company
       link: "#Valtech"
-      tags: Full-time
-      role: Senior DevOps Consultant
-      location: London, Manchester, Bristol, Brussels, Dusseldorf
-      date: June 2008 - May 2010
-      description: |
+      tags: Full-time # CSS: .company small
+      role: Senior DevOps Consultant # CSS: .item .row .role
+      location: London, Manchester, Bristol, Brussels, Dusseldorf # CSS: .item .row .location
+      date: June 2008 - May 2010 # CSS: .item .row .date
+      description: | # CSS: .item .description.markdown
         Led DevOps transformation initiatives and platform engineering across multiple enterprise clients. Designed and implemented cloud-native architectures, CI/CD pipelines, and infrastructure automation using modern tooling across Azure, GCP, and AWS. Mentored teams on DevOps practices and cloud adoption strategies.
 
         Technologies: Azure, GCP, AWS (EKS, RDS & EFS), Kong, TLS, Bamboo, Jenkins, Bitbucket, Gitlab, Github, SonarQube, Nexus, VSTS, Artifactory, Istio, ELK, ECK, Prometheus/Grafana, WAFs, Ansible, Terraform, Packer, Puppet, Powershell & Powershell DSC, IIS, Nginx, Apache, Windows Server, Ubuntu, Centos, RHEL, React, SpringBoot, .Net Web, .Net Core
-      section: Customer Projects
-      items:
-        - client: Toyota Motors
-          project: Onboard Connected Services
-          description:
+      section: Customer Projects # CSS: .sub-section-content .sub-section-title h3 (distinct style: middle font-size, bold weight, dashed border, text color)
+      items: # CSS: .sub-section-content .item
+        - client: Toyota Motors # CSS: .sub-section-content .item .row .client
+          project: Onboard Connected Services # CSS: .sub-section-content .item .project
+          description: # CSS: .sub-section-content .item .description.markdown
             Project to deliver services for delivery within the manufacturers vehicles to extend and enhance legacy solutions which have historically been inflexible. This gives the customers smart functionality in there vehicles but creates new revenue streams for the Manufacturer.
             Implemented a Kubernetes microservices architecture utilising React based front end and Springboot intergration services.
 
@@ -199,74 +195,74 @@ experience:
           description: Brown field project to update and extend functionality within brochureware, CMS and ecommerce sites hosted on Google Cloud. Developed an Azure migration strategy as part of a move to increase resilience and scalability of the hosting platforms in use as part of this global solution.
 
     # Principal Technical Consultant
-    - company: TDB Fusion
+    - company: TDB Fusion # CSS: .item .row .company
       link: "#"
-      tags: Full-time
-      role: Principal Technical Consultant
-      location: Hybrid/London/Reading, International travel
-      date: August, 2002 - July 2015
-      description: Senior technical leader specializing in networking, systems architecture, and infrastructure design across Enterprise and Telecommunications sectors. Led technical strategy, architecture design, and platform development initiatives. Combined deep technical expertise with leadership responsibilities, mentoring technical teams and driving technical excellence in complex multi-vendor environments.
+      tags: Full-time # CSS: .company small
+      role: Principal Technical Consultant # CSS: .item .row .role
+      location: Hybrid/London/Reading, International travel # CSS: .item .row .location
+      date: August, 2002 - July 2015 # CSS: .item .row .date
+      description: Senior technical leader specializing in networking, systems architecture, and infrastructure design across Enterprise and Telecommunications sectors. Led technical strategy, architecture design, and platform development initiatives. Combined deep technical expertise with leadership responsibilities, mentoring technical teams and driving technical excellence in complex multi-vendor environments. # CSS: .item .description.markdown
 
-      specialties: Pre-sales, Post-sales, team development, product management, service management/development/pricing, professional services, project/program management, contract negotiation, technical training.
-      skills: Self-healing · Technical Requirements · Cloud Strategy · Public Cloud · Emerging Technologies · Soft Skills · Business Requirements · Agile Methodologies · Problem Solving
+      specialties: Pre-sales, Post-sales, team development, product management, service management/development/pricing, professional services, project/program management, contract negotiation, technical training. # CSS: .item .description.markdown
+      skills: Self-healing · Technical Requirements · Cloud Strategy · Public Cloud · Emerging Technologies · Soft Skills · Business Requirements · Agile Methodologies · Problem Solving # CSS: .item .skills.markdown
 
     #  Technical Consultant
-    - company: Thrupoint
+    - company: Thrupoint # CSS: .item .row .company
       link: "#"
-      tags: Contract
-      role: Technical Consultant
-      location: Warsaw & Poznan, Poland
-      date: May 2002 - July 2002
-      description: Led technical design and implementation of a countrywide IP VPN backbone network using Cisco MPLS technology. Architected and delivered critical network infrastructure enabling enterprise services and wholesale IP transit. Provided technical leadership to a trans-national team, ensuring high-speed data transmission with Quality of Service (QoS) capabilities for mission-critical applications.
-      skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving
+      tags: Contract # CSS: .company small
+      role: Technical Consultant # CSS: .item .row .role
+      location: Warsaw & Poznan, Poland # CSS: .item .row .location
+      date: May 2002 - July 2002 # CSS: .item .row .date
+      description: Led technical design and implementation of a countrywide IP VPN backbone network using Cisco MPLS technology. Architected and delivered critical network infrastructure enabling enterprise services and wholesale IP transit. Provided technical leadership to a trans-national team, ensuring high-speed data transmission with Quality of Service (QoS) capabilities for mission-critical applications. # CSS: .item .description.markdown
+      skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving # CSS: .item .skills.markdown
 
     # Support Engineer
-    - company: Orchestream
+    - company: Orchestream # CSS: .item .row .company
       link: "#"
-      tags: Full-time
-      role: Support Engineer
-      location: London, International travel
-      date: August 2002 - July 2015
-      description: Provided technical support and engineering expertise for Orchestream's product portfolio, collaborating with technical consultants on design and deployment of customer projects. Specialized in IP-based MPLS VPN and QoS network implementations across multiple vendor platforms. Worked with major tier one Service Providers to deliver complex network solutions.
-      skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving
+      tags: Full-time # CSS: .company small
+      role: Support Engineer # CSS: .item .row .role
+      location: London, International travel # CSS: .item .row .location
+      date: January 2001 - May 2002 # CSS: .item .row .date
+      description: Provided technical support and engineering expertise for Orchestream's product portfolio, collaborating with technical consultants on design and deployment of customer projects. Specialized in IP-based MPLS VPN and QoS network implementations across multiple vendor platforms. Worked with major tier one Service Providers to deliver complex network solutions. # CSS: .item .description.markdown
+      skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving # CSS: .item .skills.markdown
 
     # Operational Technical Design Architect
-    - company: Cap Gemini/ICL
+    - company: Cap Gemini/ICL # CSS: .item .row .company
       link: "#"
-      tags: Full-time
-      role: Operational Technical Design Architect
-      location: London, UK travel
-      date: 1998 - 2001
-      description: Designed and architected operational technical solutions for enterprise clients, leading technical design initiatives and ensuring alignment between business requirements and technical implementation. Provided technical leadership in complex infrastructure projects, working across multiple customer sites to deliver scalable and reliable solutions.
-      skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving
+      tags: Full-time # CSS: .company small
+      role: Operational Technical Design Architect # CSS: .item .row .role
+      location: London, UK travel # CSS: .item .row .location
+      date: 1998 - 2001 # CSS: .item .row .date
+      description: Designed and architected operational technical solutions for enterprise clients, leading technical design initiatives and ensuring alignment between business requirements and technical implementation. Provided technical leadership in complex infrastructure projects, working across multiple customer sites to deliver scalable and reliable solutions. # CSS: .item .description.markdown
+      skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving # CSS: .item .skills.markdown
 
     # Senior Architect
-    - company: Info'Products
+    - company: Info'Products # CSS: .item .row .company
       link: "#"
-      tags: Full-time
-      role: Senior Architect
-      location: UK Wide
-      date: 1995 - 1998
-      description: Progressed through technical roles from Hardware Engineer to Senior Architect, leading technical teams and designing solutions across multiple customer sites. Provided technical leadership, architecture design, and hands-on implementation expertise for enterprise infrastructure projects.
-      skills: Technical Requirements · Soft Skills · Problem Solving
+      tags: Full-time # CSS: .company small
+      role: Senior Architect # CSS: .item .row .role
+      location: UK Wide # CSS: .item .row .location
+      date: 1995 - 1998 # CSS: .item .row .date
+      description: Progressed through technical roles from Hardware Engineer to Senior Architect, leading technical teams and designing solutions across multiple customer sites. Provided technical leadership, architecture design, and hands-on implementation expertise for enterprise infrastructure projects. # CSS: .item .description.markdown
+      skills: Technical Requirements · Soft Skills · Problem Solving # CSS: .item .skills.markdown
 
-# project:
+# project: # CSS: section.project
 #   show: true
 #   order: 3
-#   title: Projects
-#   description: |
+#   title: Projects # CSS: .section-title h2
+#   description: | # CSS: .section-content .description.markdown
 #     The project section in a resume is a section where you can highlight any significant projects that you have completed during your education, work experience, or personal endeavors. This section provides a detailed description of your projects that can showcase your skills, abilities, and achievements.
 
 #     In this section, you should include the name of the project, the role you played in the project, the duration, the tools and technologies you used, the objective of the project, and the outcome or result achieved. You can also include any relevant metrics or data that demonstrate the impact of the project.
 
 #     The project section is especially useful for candidates with limited work experience or those looking to highlight specific skills or accomplishments that may not be apparent in other parts of their resume. It can also be beneficial for candidates in technical or creative fields, where projects play a significant role in showcasing their capabilities.
 
-#   items:
-#     - name: Personal project
+#   items: # CSS: .section-content .items .item
+#     - name: Personal project # CSS: .item .project-name
 #       link: '#'
-#       tags:
-#       date: 2015 - 2017
-#       description: |
+#       tags: # CSS: .project-name small
+#       date: 2015 - 2017 # CSS: .item .row .date
+#       description: | # CSS: .item .description.markdown
 #         Personal project description...
 #         + First
 #         + Second
@@ -280,19 +276,19 @@ experience:
 #         + First
 #         + Second
 
-skill:
+skill: # CSS: section.skill
   show: true
   order: 1
-  title: Technical Skills
-  # description: |
+  title: Technical Skills # CSS: .section-title h2
+  # description: | # CSS: .section-content .description.markdown
   #   The skills section in a resume is a dedicated section where you can list out the various skills that you possess that are relevant to the job you are applying for. This section allows you to highlight your strengths and demonstrate your capabilities to potential employers.
   #   The skills section can include both hard skills and soft skills. Hard skills are specific technical abilities or knowledge related to a particular job or industry, such as proficiency in programming languages or experience with certain software programs. Soft skills are more general personal traits and abilities, such as communication skills, leadership, problem-solving, or teamwork.
   #   When crafting your skills section, it's important to tailor it to the specific job you are applying for, and only include skills that are relevant to the position. This can help catch the attention of the hiring manager and demonstrate that you have the qualifications necessary to succeed in the role.
   #   There are multiple ways to present your skills here. One way is to show them in a rating format. Another way is to group them together. Alternatively, you can use markdown to format it in a way that you prefer.
 
-  groups:
-    - name: Cloud Native
-      item:
+  groups: # CSS: .section-content .groups .group
+    - name: Cloud Native # CSS: .group .group-name
+      item: # CSS: .group .group-item span
         - Architecture
         - Kubernetes
         - GitOps/DevOps/DevSecOps
@@ -329,22 +325,22 @@ skill:
         - Cloud Run
         - Cloud Composer
 
-# education:
+# education: # CSS: section.education
 #   show: true
 #   order: 5
-#   title: Education
-#   description: |
+#   title: Education # CSS: .section-title h2
+#   description: | # CSS: .section-content .description.markdown
 #     The education section in a resume is where you provide information about your academic background, including any degrees. In this section, you should include the name and location of the institution where you received your degree, the name of the degree or program you completed, and the date of graduation. If you have earned multiple degrees, list them in reverse chronological order, with the most recent degree first.
 
 #     In addition to basic information about your education, you may also want to include any academic honors or awards you received, relevant coursework or projects, and your GPA if it is 3.0 or above. If you have recently graduated and do not have much work experience yet, highlighting your education and academic achievements can help demonstrate your potential to succeed in the workplace.
 
-#   items:
-#     - institution: Example University
+#   items: # CSS: .section-content .items .item
+#     - institution: Example University # CSS: .item .row .institution
 #       link: '#'
-#       date: 2015 - 2018
-#       major: Machine Learning
-#       degree: Master
-#       description: |
+#       date: 2015 - 2018 # CSS: .item .row .date
+#       major: Machine Learning # CSS: .item .major
+#       degree: Master # CSS: .item .degree
+#       description: | # CSS: .item .description.markdown
 #         Additional information for this institution.
 #         + First
 #         + Second
@@ -359,11 +355,11 @@ skill:
 #         + First
 #         + Second
 
-# certificate:
+# certificate: # CSS: section.certificate
 #   show: true
 #   order: 6
-#   title: Certificates
-#   description: |
+#   title: Certificates # CSS: .section-title h2
+#   description: | # CSS: .section-content .description.markdown
 #     The certificate section in a resume is a dedicated section where you can showcase any additional certifications or specialized training you have received. This section provides potential employers with a more complete picture of your skills and expertise, and can help you stand out from other candidates.
 
 #     Certificates can come from a variety of sources, such as online courses, workshops, or professional development programs. Examples of certificates that might be relevant to include on your resume could include certifications in a particular software or technology, industry-specific certifications, or certifications related to a specific skill or area of expertise.
@@ -372,12 +368,12 @@ skill:
 
 #     The certificate section of your resume should be tailored to the specific job you are applying for, and should only include certifications that are relevant to the position. By highlighting your certifications, you can demonstrate your commitment to professional development and your expertise in a particular area.
 
-#   items:
-#     - name: Example Certificate One
-#       issuer: by Example
-#       date: 2020
+#   items: # CSS: .section-content .items .item (flex-wrap layout)
+#     - name: Example Certificate One # CSS: .item .certificate-name
+#       issuer: by Example # CSS: .item .issuer
+#       date: 2020 # CSS: .item .row .date
 #       link: '#'
-#       description: |
+#       description: | # CSS: .item .description.markdown
 #         It's my Example Certificate One by Example.
 #     - name: Example Certificate Two
 #       issuer: by Example
@@ -386,11 +382,11 @@ skill:
 #       description: |
 #         It's my Example Certificate Two by Example.
 
-# publication:
+# publication: # CSS: section.publication
 #   show: true
 #   order: 7
-#   title: Publications
-#   description: |
+#   title: Publications # CSS: .section-title h2
+#   description: | # CSS: .section-content .description.markdown
 #     The publication section in a resume is a dedicated section where you can showcase any publications that you have authored or contributed to. This section is particularly relevant for individuals in academic or research fields, but can also be relevant for individuals in other fields who have published articles or papers.
 
 #     Publications can include academic journal articles, conference papers, book chapters, reports, or other written works. In this section, you should list the title of the publication, the names of any co-authors, the name of the publication or conference, the date of publication, and any other relevant details.
@@ -399,33 +395,33 @@ skill:
 
 #     Including a publication section in your resume can help demonstrate your expertise and credibility in your field, and can help you stand out from other candidates. However, if you do not have any publications to list, it is not necessary to include this section in your resume.
 
-#   items:
-#     - title: Example Publication in Action
-#       authors: Foo Bar
-#       conference: Foobar, 2019
+#   items: # CSS: .section-content .items .item
+#     - title: Example Publication in Action # CSS: .item .publication-title
+#       authors: Foo Bar # CSS: .item .authors
+#       conference: Foobar, 2019 # CSS: .item .conference
 #       link: '#'
 #     - title: The Art of Example Publication
 #       authors: Foo Bar
 #       conference: Foobar, 2019
 #       link:
 
-# award:
+# award: # CSS: section.award
 #   show: true
 #   order: 8
-#   title: Awards
-#   description: |
+#   title: Awards # CSS: .section-title h2
+#   description: | # CSS: .section-content .description.markdown
 #     The award section in a resume is a dedicated section where you can showcase any awards you have received. This section is particularly relevant for individuals who have received awards for their work in their field, such as employees who have received performance awards or industry-specific awards. In this section, you should list the name of the award, the organization or institution that awarded it, the date it was awarded, and any other relevant details.
 
 #     When including your awards on your resume, be sure to focus on the most significant or relevant awards that showcase your skills and expertise. If you have received a long list of awards, you may want to consider including only the most recent or prestigious awards on your resume.
 
 #     By highlighting your awards, you can demonstrate your achievements and accomplishments in your field, and can help differentiate yourself from other candidates. However, if you have not received any awards, it is not necessary to include this section in your resume.
 
-#   items:
-#     - name: Example Awared One
-#       awarder: by Example
-#       date: 2022
+#   items: # CSS: .section-content .items .item (flex-wrap layout)
+#     - name: Example Awared One # CSS: .item .award-name
+#       awarder: by Example # CSS: .item .awarder
+#       date: 2022 # CSS: .item .row .date
 #       link: '#'
-#       description: |
+#       description: | # CSS: .item .description.markdown
 #         It's my Example Awared One by Example.
 #     - name: Example Awared Two
 #       awarder: by Example
@@ -458,46 +454,46 @@ skill:
 #     + Foo Bar. 2022. Example patent name one. US 123456, filed Oct 3, 2022. Patent pending.
 #     + Foo Bar. 2022. Example patent name two. US 654321, filed Oct 3, 2022, and issued Nov 15, 2022.
 
-organization:
+organization: # CSS: section.organization
   show: true
   order: 10
-  title: Organizations
-  description: Voluntary activities undertaken to support the community and charitable causes.
-  items:
-    - organization: 1st Baldwyns Scout Group
-      role: Group Lead Volunteer & Trustee
-      date: 2024 - Present
+  title: Organizations # CSS: .section-title h2
+  description: Voluntary activities undertaken to support the community and charitable causes. # CSS: .section-content .description.markdown
+  items: # CSS: .section-content .items .item
+    - organization: 1st Baldwyns Scout Group # CSS: .item .row .company
+      role: Group Lead Volunteer & Trustee # CSS: .item .row .role
+      date: 2024 - Present # CSS: .item .row .date
       url: https://www.scouts.org.uk/
-      description: |
+      description: | # CSS: .item .description.markdown
         Acting as the Group Lead Volunteer and a Charity Trustee for the 1st Baldwyns Scouts.
 
-    - organization: "1st Baldwyns Park Scout and Guides Group (Charity number: 303501)"
-      role: Trustee
-      date: 2024 - Present
+    - organization: "1st Baldwyns Park Scout and Guides Group (Charity number: 303501)" # CSS: .item .row .company
+      role: Trustee # CSS: .item .row .role
+      date: 2024 - Present # CSS: .item .row .date
       url: https://www.scouts.org.uk/
-      description: |
+      description: | # CSS: .item .description.markdown
         Acting as a Charity Trustee and board member for the 1st Baldwyns Park Scout and Guides Group, this is an external charity which owns and operates all of the facilities for the combined group along with supporting a range of community and educational endeavours to enable the community to use and enjoy the facilities.
 
-# language:
+# language: # CSS: section.language
 #   show: true
 #   order: 11
-#   title: Languages
-#   description: |
+#   title: Languages # CSS: .section-title h2
+#   description: | # CSS: .section-content .description.markdown
 #     The languages section in a resume typically includes information about your proficiency in different languages. This section can be particularly important if you are applying for a job that requires fluency or proficiency in a specific language.
 
 #     It's important to be honest about your language proficiency in your resume. If you overstate your abilities, it could lead to problems during the interview process or on the job. If you have taken language courses or earned language certifications, you can also include this information in the languages section of your resume.
 
-#   items:
-#     - idiom: Chinese
-#       level: Native
+#   items: # CSS: .section-content .items .item (flex-wrap with "/" delimiter)
+#     - idiom: Chinese # CSS: .item span
+#       level: Native # CSS: .item small
 #     - idiom: English
 #       level: Professional
 
-# interest:
+# interest: # CSS: section.interest
 #   show: false
 #   order: 12
-#   title: Interests
-#   description:
+#   title: Interests # CSS: .section-title h2
+#   description: # CSS: .section-content .description.markdown
 
 # evaluation:
 #   show: true
@@ -510,26 +506,26 @@ organization:
 
 #     A well-crafted self-evaluation section can demonstrate your self-awareness and confidence in your abilities, as well as your willingness to continuously learn and grow. However, it is important to be honest and avoid over-inflating your skills or qualifications, as this can negatively impact your credibility and the hiring manager's impression of you.
 
-reference:
+reference: # CSS: section.reference
   show: true
   order: 14
-  title: References
-  description: |
+  title: References # CSS: .section-title h2
+  description: | # CSS: .section-content .description.markdown
     References are available upon request.
 #     It's important to note that including a reference section in a resume is not always necessary, and some employers may prefer to request references separately. If you do choose to include a reference section, it should typically be located at the end of your resume.
 #     When listing references, be sure to include the individual's name, job title, company name, phone number, and email address. It's also a good idea to ask for the individual's permission before listing them as a reference, and to let them know what kind of job you are applying for so they can speak to your relevant skills and experience.
 
 #     It's important to choose references who can provide a positive and comprehensive evaluation of your work. Avoid listing family members or friends as references, and instead focus on individuals who can speak to your professional abilities and accomplishments.
 
-#   items:
-#     - name: Foo One
+#   items: # CSS: .section-content .items .item (flex-wrap layout)
+#     - name: Foo One # CSS: .item .reference-name
 #       link: '#'
-#       title: Backend Developer
-#       institution: Second Company
-#       address: 1234 Example St, XXX, XY 11111
-#       email: foo.one@example.com
-#       phone: 111-222-333
-#       description: |
+#       title: Backend Developer # CSS: .item .reference-title
+#       institution: Second Company # CSS: .item .institution
+#       address: 1234 Example St, XXX, XY 11111 # CSS: .item .address
+#       email: foo.one@example.com # CSS: .item .email
+#       phone: 111-222-333 # CSS: .item .phone
+#       description: | # CSS: .item .description.markdown
 #         Foo One was my colleague in Second Company.
 
 #     - name: Bar Two
@@ -542,4 +538,4 @@ reference:
 #       description: |
 #         Bar Two was my advisor at Example University.
 
-close: <strong>Sorry, my resume has been hidden.</strong>
+close: <strong>Sorry, my resume has been hidden.</strong> # CSS: .close .description
