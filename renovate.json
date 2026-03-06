@@ -1,6 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
-  ]
+  "extends": ["config:recommended"],
+  "rebaseWhen": "behind-base-branch",
+  "baseBranches": ["dev"],
+  "labels": ["dependencies", "renovate", "hugo"],
+  "automergeStrategy": "merge-commit"
 }
