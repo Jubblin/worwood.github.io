@@ -162,7 +162,7 @@ experience: # CSS: section.experience
       tags: Full-time # CSS: .company small
       role: Senior DevOps Consultant # CSS: .item .row .role
       location: London, Manchester, Bristol, Brussels, Dusseldorf # CSS: .item .row .location
-      date: June 2008 - May 2010 # CSS: .item .row .date
+      date: August 2017 - April 2021 # CSS: .item .row .date
       description: | # CSS: .item .description.markdown
         Led DevOps transformation initiatives and platform engineering across multiple enterprise clients. Designed and implemented cloud-native architectures, CI/CD pipelines, and infrastructure automation using modern tooling across Azure, GCP, and AWS. Mentored teams on DevOps practices and cloud adoption strategies.
 
@@ -200,7 +200,7 @@ experience: # CSS: section.experience
       tags: Full-time # CSS: .company small
       role: Principal Technical Consultant # CSS: .item .row .role
       location: Hybrid/London/Reading, International travel # CSS: .item .row .location
-      date: August, 2002 - July 2015 # CSS: .item .row .date
+      date: August, 2002 - July 2017 # CSS: .item .row .date
       description: Senior technical leader specializing in networking, systems architecture, and infrastructure design across Enterprise and Telecommunications sectors. Led technical strategy, architecture design, and platform development initiatives. Combined deep technical expertise with leadership responsibilities, mentoring technical teams and driving technical excellence in complex multi-vendor environments. # CSS: .item .description.markdown
 
       specialties: Pre-sales, Post-sales, team development, product management, service management/development/pricing, professional services, project/program management, contract negotiation, technical training. # CSS: .item .description.markdown
