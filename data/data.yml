@@ -26,7 +26,7 @@ contact: # CSS: .basic .header .contact .contact-item
   birthday: # birthday
   nationality: UK # nationality
   visa: # passport visa
-  drivinglicense: Full, Clean # driving licence
+  drivinglicense: Full # driving licence
 
   # ! Do not paste the link directly.
   # Please copy the <> part of the comment in the link to your profile on the relevant site and paste it here.
@@ -111,7 +111,7 @@ profile: # CSS: section.profile
   order: 1
   title: Profile # CSS: .section-title h2
   description: | # CSS: .section-content .description.markdown
-    A senior technical leader and Cloud Architect with deep expertise in cloud-native technologies, distributed systems, and platform engineering. They combine hands-on technical excellence with strategic vision, leading the design and delivery of complex infrastructure solutions across major cloud providers. With a proven track record of building and mentoring high-performing technical teams, they excel at translating business requirements into scalable, resilient architectures while maintaining a strong focus on developer experience and operational excellence. They are committed to technical innovation, continuous learning, and driving technical excellence through both individual contribution and technical leadership.
+    A senior Technical Leader and Cloud Architect with deep expertise in cloud-native technologies, distributed systems, and platform engineering. They combine hands-on technical excellence with strategic vision, leading the design and delivery of complex infrastructure solutions across major cloud providers. With a proven track record of building and mentoring high-performing technical teams, they excel at translating business requirements into scalable, resilient architectures while maintaining a strong focus on developer experience and operational excellence. They are committed to technical innovation, continuous learning, and driving technical excellence through both individual contribution and technical leadership.
 
 experience: # CSS: section.experience
   show: true
@@ -128,24 +128,11 @@ experience: # CSS: section.experience
       role: Senior Infrastructure Architect # CSS: .item .row .role
       location: Hybrid/London # CSS: .item .row .location
       date: August, 2022 - Present # CSS: .item .row .date
-      description: Leading the design and delivery of cloud-native infrastructure solutions across major cloud providers. Combining hands-on technical architecture with strategic platform engineering, mentoring technical teams, and driving technical excellence in complex enterprise environments. # CSS: .item .description.markdown
-      section: Customer Projects # CSS: .sub-section-content .sub-section-title h3 (distinct style: middle font-size, bold weight, dashed border, text color)
-      items: # CSS: .sub-section-content .item
-        - client: "'Under NDA'" # CSS: .sub-section-content .item .row .client
-          project: Secure financial trading messaging platform # CSS: .sub-section-content .item .project
-          description: Lead Cloud Architect delivering a secure trade messaging platform within GCP, utilising an event based architecture leveraging GCP PubSub and GKE while delivering isolated infrastructure to clients and partners. # CSS: .sub-section-content .item .description.markdown
-
-        - client: LSEG
-          project: Kubernetes and Container Platforms
-          description:
-            Assigned to a long term consultancy role where I am leading the vision and delivery of Kubernetes and Container platforms across all major Cloud Providers.
-            Led development and execution of strategy for Kubernetes and Container platform teams, aligning with strategic business objectives, while improving productivity and developer experience both without and within.
-
-            Led, mentored and grew a high-performing global team, ensuring they had the resources and support needed to excel.
-
-        - client: Various
-          project: Short form buy & sale side engagements
-          description: Working on buy and sale side engagements as part of Endava's internal and external investment management operations. Analysing business capabilities, strategies, process and procedures to understand there maturity and readiness for sale and buy transactions across a range of technology companies across Europe.
+      description: | # CSS: .item .description.markdown
+        • Designed and implemented secure unified containerization solutions utilizing Kubernetes, Anthos, AKS, and EKS.  
+        • Led multiple workstreams as a Cloud Architect and Tech Lead, ensuring seamless integration and deployment.  
+        • Collaborated with cross-functional teams to enhance infrastructure efficiency and security across projects.
+        Leading the design and delivery of cloud-native infrastructure solutions across major cloud providers. Combining hands-on technical architecture with strategic platform engineering, mentoring technical teams, and driving technical excellence in complex enterprise environments. # CSS: .item .description.markdown
 
     # Principal Consultant
     - company: Devoteam # CSS: .item .row .company
@@ -154,7 +141,10 @@ experience: # CSS: section.experience
       role: Principal Consultant # CSS: .item .row .role
       location: Hybrid/London # CSS: .item .row .location
       date: April 2021 - July 2022 # CSS: .item .row .date
-      description: Led technical architecture and platform transformation for a Tier 1 Market Data Provider, designing and implementing hybrid Bare-metal and Cloud Kubernetes environments. Provided technical leadership, architecture guidance, and hands-on implementation to modernize critical market data infrastructure. # CSS: .item .description.markdown
+      description: |
+        • Spearheaded the architectural transformation of a market data platform for a Tier 1 provider.  
+        • Designed and implemented solutions for hybrid Bare-metal and Cloud Kubernetes environments.  
+        • Collaborated with cross-functional teams to ensure seamless integration and performance optimization.
 
     # Senior DevOps Consultant
     - company: Valtech # CSS: .item .row .company
@@ -164,35 +154,12 @@ experience: # CSS: section.experience
       location: London, Manchester, Bristol, Brussels, Dusseldorf # CSS: .item .row .location
       date: August 2017 - April 2021 # CSS: .item .row .date
       description: | # CSS: .item .description.markdown
-        Led DevOps transformation initiatives and platform engineering across multiple enterprise clients. Designed and implemented cloud-native architectures, CI/CD pipelines, and infrastructure automation using modern tooling across Azure, GCP, and AWS. Mentored teams on DevOps practices and cloud adoption strategies.
-
-        Technologies: Azure, GCP, AWS (EKS, RDS & EFS), Kong, TLS, Bamboo, Jenkins, Bitbucket, Gitlab, Github, SonarQube, Nexus, VSTS, Artifactory, Istio, ELK, ECK, Prometheus/Grafana, WAFs, Ansible, Terraform, Packer, Puppet, Powershell & Powershell DSC, IIS, Nginx, Apache, Windows Server, Ubuntu, Centos, RHEL, React, SpringBoot, .Net Web, .Net Core
-      section: Customer Projects # CSS: .sub-section-content .sub-section-title h3 (distinct style: middle font-size, bold weight, dashed border, text color)
-      items: # CSS: .sub-section-content .item
-        - client: Toyota Motors # CSS: .sub-section-content .item .row .client
-          project: Onboard Connected Services # CSS: .sub-section-content .item .project
-          description: # CSS: .sub-section-content .item .description.markdown
-            Project to deliver services for delivery within the manufacturers vehicles to extend and enhance legacy solutions which have historically been inflexible. This gives the customers smart functionality in there vehicles but creates new revenue streams for the Manufacturer.
-            Implemented a Kubernetes microservices architecture utilising React based front end and Springboot intergration services.
-
-        - client: Department for Transport
-          project: Blue Badge system
-          description: Project to deliver a suite of Services to provide a system to manage the UK's Blue Badge application, eligibility and issuance requirements.
-
-        - client: Major British Airline
-          project: Consultancy Engagement to audit, rationalise and implement DevOps and Agile working into existing teams
-
-        - client: Department for Work and Pensions
-          project: New Style Job Seekers Allowance
-          description: Project to replace an aged and outmoded system. Implemented a, microservices architecture based, claimant system, with the intent of both easing the process of initial claim submission and onboarding into the UK benefits system.
-
-        - client: OFGEM
-          project: Proof of Concept Secure Data Exchange
-          description: Project to implement a Proof of Concept secure data exchange to be used to ingest data into an organisational data hub.
-
-        - client: Delonghi
-          project: Delonghi Retail
-          description: Brown field project to update and extend functionality within brochureware, CMS and ecommerce sites hosted on Google Cloud. Developed an Azure migration strategy as part of a move to increase resilience and scalability of the hosting platforms in use as part of this global solution.
+        • Spearheaded the implementation of a Kubernetes microservices architecture for a major Japanese motor manufacturer, enhancing vehicle connectivity and in car experiences.
+        • Developed a comprehensive Azure migration strategy to improve resilience and scalability for Delonghi's cloud-hosted platforms.  
+        • Conducted a consultancy engagement for a British airline to integrate DevOps and Agile methodologies into existing teams.
+        • Collaborated with cross-functional teams to deliver the Blue Badge system for managing UK applications and eligibility.  
+        • Designed and implemented a microservices architecture for the New Style Job Seekers Allowance project, enhancing claim submission processes.  
+        • Developed a Proof of Concept for secure data exchange at OFGEM, facilitating data ingestion into an organizational data hub.
 
     # Principal Technical Consultant
     - company: TDB Fusion # CSS: .item .row .company
@@ -201,7 +168,10 @@ experience: # CSS: section.experience
       role: Principal Technical Consultant # CSS: .item .row .role
       location: Hybrid/London/Reading, International travel # CSS: .item .row .location
       date: August, 2002 - July 2017 # CSS: .item .row .date
-      description: Senior technical leader specializing in networking, systems architecture, and infrastructure design across Enterprise and Telecommunications sectors. Led technical strategy, architecture design, and platform development initiatives. Combined deep technical expertise with leadership responsibilities, mentoring technical teams and driving technical excellence in complex multi-vendor environments. # CSS: .item .description.markdown
+      description: | # CSS: .item .description.markdown
+      • Provided expert consultancy in networking and systems, leveraging 24 years of experience across Enterprise and Telecom sectors.  
+        • Managed pre-sales and post-sales support, ensuring seamless integration of services and customer satisfaction.  
+        • Developed and delivered technical training programs, enhancing team capabilities and service management.
 
       specialties: Pre-sales, Post-sales, team development, product management, service management/development/pricing, professional services, project/program management, contract negotiation, technical training. # CSS: .item .description.markdown
       skills: Self-healing · Technical Requirements · Cloud Strategy · Public Cloud · Emerging Technologies · Soft Skills · Business Requirements · Agile Methodologies · Problem Solving # CSS: .item .skills.markdown
@@ -213,7 +183,10 @@ experience: # CSS: section.experience
       role: Technical Consultant # CSS: .item .row .role
       location: Warsaw & Poznan, Poland # CSS: .item .row .location
       date: May 2002 - July 2002 # CSS: .item .row .date
-      description: Led technical design and implementation of a countrywide IP VPN backbone network using Cisco MPLS technology. Architected and delivered critical network infrastructure enabling enterprise services and wholesale IP transit. Provided technical leadership to a trans-national team, ensuring high-speed data transmission with Quality of Service (QoS) capabilities for mission-critical applications. # CSS: .item .description.markdown
+      description: | # CSS: .item .description.markdown
+        • Led technical design and implementation of a countrywide IP VPN backbone network using Cisco MPLS technology.  
+        • Architected and delivered critical network infrastructure enabling enterprise services and wholesale IP transit.  
+        • Provided technical leadership to a trans-national team, ensuring high-speed data transmission with Quality of Service (QoS) capabilities for mission-critical applications.
       skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving # CSS: .item .skills.markdown
 
     # Support Engineer
@@ -223,7 +196,10 @@ experience: # CSS: section.experience
       role: Support Engineer # CSS: .item .row .role
       location: London, International travel # CSS: .item .row .location
       date: January 2001 - May 2002 # CSS: .item .row .date
-      description: Provided technical support and engineering expertise for Orchestream's product portfolio, collaborating with technical consultants on design and deployment of customer projects. Specialized in IP-based MPLS VPN and QoS network implementations across multiple vendor platforms. Worked with major tier one Service Providers to deliver complex network solutions. # CSS: .item .description.markdown
+      description: | # CSS: .item .description.markdown
+        • Provided comprehensive pre and post-sales support for Orchestream's full range of functionalities.  
+        • Collaborated with Technical Consultants to design and deploy customer projects involving IP-based MPLS VPN and QoS networks.  
+        • Engaged with major tier one Service Providers to ensure seamless implementation and customer satisfaction.
       skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving # CSS: .item .skills.markdown
 
     # Operational Technical Design Architect
@@ -233,7 +209,11 @@ experience: # CSS: section.experience
       role: Operational Technical Design Architect # CSS: .item .row .role
       location: London, UK travel # CSS: .item .row .location
       date: 1998 - 2001 # CSS: .item .row .date
-      description: Designed and architected operational technical solutions for enterprise clients, leading technical design initiatives and ensuring alignment between business requirements and technical implementation. Provided technical leadership in complex infrastructure projects, working across multiple customer sites to deliver scalable and reliable solutions. # CSS: .item .description.markdown
+      description: # CSS: .item .description.markdown
+      • Served as a Technical Consultant responsible for LAN & WAN infrastructure for over 6000 users across 100+ UK offices.  
+        • Engaged in new builds, ensuring seamless integration of technology and infrastructure.  
+        • Provided BAU support and conducted architectural reviews to enhance operational efficiency.  
+        • Collaborated with cross-functional teams to align technical solutions with business objectives.
       skills: Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving # CSS: .item .skills.markdown
 
     # Senior Architect
@@ -243,7 +223,10 @@ experience: # CSS: section.experience
       role: Senior Architect # CSS: .item .row .role
       location: UK Wide # CSS: .item .row .location
       date: 1995 - 1998 # CSS: .item .row .date
-      description: Progressed through technical roles from Hardware Engineer to Senior Architect, leading technical teams and designing solutions across multiple customer sites. Provided technical leadership, architecture design, and hands-on implementation expertise for enterprise infrastructure projects. # CSS: .item .description.markdown
+      description: | # CSS: .item .description.markdown
+        • Provided technical support across various customer sites in the UK, ensuring seamless hardware and software integration.  
+        • Transitioned between roles from Hardware Engineer to Senior Architect, demonstrating adaptability and expertise.  
+        • Led teams in troubleshooting and resolving complex technical issues, enhancing customer satisfaction and operational efficiency.
       skills: Technical Requirements · Soft Skills · Problem Solving # CSS: .item .skills.markdown
 
 # project: # CSS: section.project
@@ -539,3 +522,5 @@ reference: # CSS: section.reference
 #         Bar Two was my advisor at Example University.
 
 close: <strong>Sorry, my resume has been hidden.</strong> # CSS: .close .description
+
+invalid_yaml: [
