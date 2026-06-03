@@ -31,12 +31,14 @@ This repository deploys Hugo to GitHub Pages from `main` via `.github/workflows/
 - HTML output exists and appears valid.
 - Local `href` and `src` references resolve to files/directories in `public/`.
 
-## Branch protection settings (manual)
+## Branch protection settings
 
-In GitHub repository settings, branch protection for `main` should require:
+`main` is protected to require the PR validation status check:
 
-1. Status check: `Validate Hugo build (PR) / validate`
-2. (Optional) At least one approving review for content/config/workflow changes.
+1. Required status check context: `validate` (workflow: **Validate Hugo build (PR)**)
+2. (Optional) Add required approving reviews in repository settings if desired.
+
+If `gh` commands fail with `HTTP 401: Bad credentials`, unset `GITHUB_TOKEN` from direnv before running GitHub CLI commands.
 
 ## Controlled test sequence
 
