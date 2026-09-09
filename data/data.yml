@@ -111,7 +111,7 @@ profile: # CSS: section.profile
   order: 1
   title: Profile # CSS: .section-title h2
   description: | # CSS: .section-content .description.markdown
-    I'm a cloud and infrastructure architect with a 25-year engineering career that began in enterprise networking and progressed through DevOps, platform engineering and technical consulting into cloud architecture, with a sustained recent focus on Google Cloud — a year built around Anthos on Bare Metal, followed by a Kubernetes and container platform engagement at LSEG where roughly 80% of my time has been on GKE. At Endava I've also led the architecture of a secure, event-driven trading platform on GCP built around Pub/Sub and GKE, combining hands-on architectural ownership with mentoring and growing the engineering teams that deliver it. My background spans AWS, Azure and Google Cloud, giving me a working view of what migrations off those platforms actually involve, but Google Cloud is where I now concentrate. Most of my career has run through consulting engagements rather than a single in-house team, including at [Devoteam, a Google Cloud partner], and I'm most effective owning the statement of work, standing behind the architecture, and defending it directly with senior client technologists.
+    I'm a cloud and infrastructure architect with a 25-year engineering career that began in enterprise networking and progressed through DevOps, platform engineering and technical consulting into cloud architecture, with a sustained recent focus on Google Cloud — a year built around Anthos on Bare Metal, followed by a Kubernetes and container platform engagement at LSEG where roughly 80% of my time has been on GKE. At Endava I've also led the architecture of a secure, event-driven trading platform on GCP built around Pub/Sub and GKE, combining hands-on architectural ownership with mentoring and growing the engineering teams that deliver it. My background spans AWS, Azure and Google Cloud, giving me a working view of what migrations off those platforms actually involve, but Google Cloud is where I now concentrate. Most of my career has run through consulting engagements rather than a single in-house team, including at Devoteam, a Google Cloud partner, and I'm most effective owning the statement of work, standing behind the architecture, and defending it directly with senior client technologists.
 
 experience: # CSS: section.experience
   show: true
@@ -295,8 +295,8 @@ skill: # CSS: section.skill
         - Architecture
         - Kubernetes
         - GitOps/DevOps/DevSecOps
-        - CNI's/Networking
-        - IaC
+        - CNI's & Networking
+        - IaC "Terraform, Cloudformation & Crossplane"
         - CI/CD "Jenkins, GitLab, BitBucket, Github"
 
     - name: AWS
@@ -316,8 +316,8 @@ skill: # CSS: section.skill
 
     - name: Google
       item:
-        - GKE/Anthos
-        - NCC/Networking
+        - GKE & Anthos
+        - NCC, Networking, SCC, Confidential Compute
         - PubSub
         - Storage
         - Compute
@@ -327,6 +327,10 @@ skill: # CSS: section.skill
         - Data Loss Prevention
         - Cloud Run
         - Cloud Composer
+        - Gemini & Enterprise
+        - AntiGravity
+        - ADK 
+        - Agent Governence
 
 # education: # CSS: section.education
 #   show: true
