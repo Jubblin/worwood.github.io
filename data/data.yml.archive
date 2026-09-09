@@ -26,7 +26,7 @@ contact: # CSS: .basic .header .contact .contact-item
   birthday: # birthday
   nationality: UK # nationality
   visa: # passport visa
-  drivinglicense: Full # driving licence
+  drivinglicense: Full, Clean # driving licence
 
   # ! Do not paste the link directly.
   # Please copy the <> part of the comment in the link to your profile on the relevant site and paste it here.
@@ -111,7 +111,7 @@ profile: # CSS: section.profile
   order: 1
   title: Profile # CSS: .section-title h2
   description: | # CSS: .section-content .description.markdown
-    I'm a cloud and infrastructure architect with a 25-year engineering career that began in enterprise networking and progressed through DevOps, platform engineering and technical consulting into cloud architecture, with a sustained recent focus on Google Cloud — a year built around Anthos on Bare Metal, followed by a Kubernetes and container platform engagement at LSEG where roughly 80% of my time has been on GKE. At Endava I've also led the architecture of a secure, event-driven trading platform on GCP built around Pub/Sub and GKE, combining hands-on architectural ownership with mentoring and growing the engineering teams that deliver it. My background spans AWS, Azure and Google Cloud, giving me a working view of what migrations off those platforms actually involve, but Google Cloud is where I now concentrate. Most of my career has run through consulting engagements rather than a single in-house team, including at [Devoteam, a Google Cloud partner], and I'm most effective owning the statement of work, standing behind the architecture, and defending it directly with senior client technologists.
+    A senior technical leader and Cloud Architect with deep expertise in cloud-native technologies, distributed systems, and platform engineering. They combine hands-on technical excellence with strategic vision, leading the design and delivery of complex infrastructure solutions across major cloud providers. With a proven track record of building and mentoring high-performing technical teams, they excel at translating business requirements into scalable, resilient architectures while maintaining a strong focus on developer experience and operational excellence. They are committed to technical innovation, continuous learning, and driving technical excellence through both individual contribution and technical leadership.
 
 experience: # CSS: section.experience
   show: true
@@ -139,16 +139,13 @@ experience: # CSS: section.experience
           project: Kubernetes and Container Platforms
           description:
             Assigned to a long term consultancy role where I am leading the vision and delivery of Kubernetes and Container platforms across all major Cloud Providers.
-            
-            Google Cloud was the primary platform for this work, with GKE accounting for roughly 80% of my time on the engagement against the other cloud providers combined.
-            
             Led development and execution of strategy for Kubernetes and Container platform teams, aligning with strategic business objectives, while improving productivity and developer experience both without and within.
 
             Led, mentored and grew a high-performing global team, ensuring they had the resources and support needed to excel.
 
         - client: Various
-          project: Short form buy & sell side engagements
-          description: Working on buy and sell side engagements as part of Endava's internal and external investment management operations. Analysing business capabilities, strategies, process and procedures to understand there maturity and readiness for sale and buy transactions across a range of technology companies across Europe.
+          project: Short form buy & sale side engagements
+          description: Working on buy and sale side engagements as part of Endava's internal and external investment management operations. Analysing business capabilities, strategies, process and procedures to understand there maturity and readiness for sale and buy transactions across a range of technology companies across Europe.
 
     # Principal Consultant
     - company: Devoteam # CSS: .item .row .company
@@ -157,7 +154,7 @@ experience: # CSS: section.experience
       role: Principal Consultant # CSS: .item .row .role
       location: Hybrid/London # CSS: .item .row .location
       date: April 2021 - July 2022 # CSS: .item .row .date
-      description: Spent roughly a year focused on Anthos on Bare Metal, architecting Google Cloud's Kubernetes platform directly onto the client's existing bare-metal estate as part of the Tier 1 Market Data Providers hybrid Bare-metal and Cloud Kubernetes environments. Provided technical leadership, architecture guidance, and hands-on implementation to modernize critical market data infrastructure. # CSS: .item .description.markdown
+      description: Led technical architecture and platform transformation for a Tier 1 Market Data Provider, designing and implementing hybrid Bare-metal and Cloud Kubernetes environments. Provided technical leadership, architecture guidance, and hands-on implementation to modernize critical market data infrastructure. # CSS: .item .description.markdown
 
     # Senior DevOps Consultant
     - company: Valtech # CSS: .item .row .company
