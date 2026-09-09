@@ -157,7 +157,7 @@ experience: # CSS: section.experience
       role: Principal Consultant # CSS: .item .row .role
       location: Hybrid/London # CSS: .item .row .location
       date: April 2021 - July 2022 # CSS: .item .row .date
-      description: Spent roughly a year focused on Anthos on Bare Metal, architecting Google Cloud's Kubernetes platform directly onto the client's existing bare-metal estate as part of the Tier 1 Market Data Providers hybrid Bare-metal and Cloud Kubernetes environments. Provided technical leadership, architecture guidance, and hands-on implementation to modernize critical market data infrastructure. # CSS: .item .description.markdown
+      description: Spent roughly a year focused on Anthos on Bare Metal, architecting Google Cloud's Kubernetes platform directly onto the client's existing bare-metal estate as part of the Tier 1 market data provider's real-time platform distributing 70+ million instruments to clients globally, hybrid Bare-metal and Cloud Kubernetes environments. Provided technical leadership, architecture guidance, and hands-on implementation to modernize critical market data infrastructure. # CSS: .item .description.markdown
 
     # Senior DevOps Consultant
     - company: Valtech # CSS: .item .row .company
@@ -317,7 +317,11 @@ skill: # CSS: section.skill
     - name: Google
       item:
         - GKE & Anthos
-        - NCC, Networking, SCC, Confidential Compute
+        - Anthos Service Mesh
+        - NCC, Networking, 
+        - SCC
+        - Confidential Compute
+        - IAM
         - PubSub
         - Storage
         - Compute
