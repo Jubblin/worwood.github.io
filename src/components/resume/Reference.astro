@@ -1,0 +1,37 @@
+---
+import Section from "./Section.astro";
+import { md } from "../../lib/markdown";
+
+interface Props {
+  reference?: {
+    show?: boolean; order?: number; title?: string; description?: string;
+    items?: { name?: string; link?: string; title?: string; institution?: string; address?: string; email?: string; phone?: string; description?: string }[];
+  } | null;
+}
+const { reference } = Astro.props;
+---
+{reference?.show && (
+  <Section name="reference" icon="fa-circle-nodes" {...reference}>
+    {reference.items?.length ? (
+      <div class="items">
+        {reference.items.map((item) => (
+          <div class="item">
+            {item.name && (
+              <Fragment>
+                <div class="reference-name">
+                  {item.link ? <a href={item.link} target="_blank">{item.name}</a> : <span>{item.name}</span>}
+                </div>
+                {item.title && <div class="reference-title"><span>{item.title}</span></div>}
+                {item.institution && <div class="reference-institution"><span>{item.institution}</span></div>}
+                {item.address && <div class="reference-address"><span>{item.address}</span></div>}
+                {item.email && <div class="reference-email"><a href={`mailto:${item.email}`}>{item.email}</a></div>}
+                {item.phone && <div class="reference-phone"><a href={`tel:${item.phone}`}>{item.phone}</a></div>}
+                {item.description && <div class="description markdown" set:html={md(item.description)} />}
+              </Fragment>
+            )}
+          </div>
+        ))}
+      </div>
+    ) : null}
+  </Section>
+)}

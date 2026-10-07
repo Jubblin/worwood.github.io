@@ -1,0 +1,17 @@
+---
+import { md } from "../../lib/markdown";
+
+// Shared section shell used by every theme partial (section-title + description).
+interface Props { name: string; icon: string; title?: string; order?: number | null; description?: string | null }
+const { name, icon, title, order, description } = Astro.props;
+---
+<section class={name} style={`order: ${order || 1}`}>
+  <div class="section-title">
+    <i class={`section-icon fa-solid ${icon}`}></i>
+    <h2>{title}</h2>
+  </div>
+  <div class="section-content">
+    {description && <div class="description markdown" set:html={md(description)} />}
+    <slot />
+  </div>
+</section>

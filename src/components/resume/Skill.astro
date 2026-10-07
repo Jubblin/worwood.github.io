@@ -1,0 +1,43 @@
+---
+import Section from "./Section.astro";
+
+// hugo.yaml params.skillLevelIcon
+const LEVEL_ICON = "lightbulb";
+
+interface Props {
+  skill?: {
+    show?: boolean; order?: number; title?: string; description?: string;
+    items?: { name?: string; level?: number }[];
+    groups?: { name?: string; item?: string[] }[];
+  } | null;
+}
+const { skill } = Astro.props;
+---
+{skill?.show && (
+  <Section name="skill" icon="fa-toolbox" {...skill}>
+    {skill.items?.length ? (
+      <div class="items">
+        {skill.items.map((item) => (
+          <div class="item">
+            <div class="skill-name"><span set:html={item.name} /></div>
+            <div class="skill-level">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <i class={`${i <= (item.level ?? 0) ? "fa-solid" : "fa-regular"} fa-${LEVEL_ICON}`}></i>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    ) : null}
+    {skill.groups?.length ? (
+      <div class="groups">
+        {skill.groups.map((group) => (
+          <div class="group">
+            <div class="group-name"><span set:html={group.name} /></div>
+            <div class="group-item">{group.item?.map((s) => <span set:html={s} />)}</div>
+          </div>
+        ))}
+      </div>
+    ) : null}
+  </Section>
+)}

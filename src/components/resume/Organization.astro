@@ -1,0 +1,45 @@
+---
+import Section from "./Section.astro";
+import { md } from "../../lib/markdown";
+
+interface Props {
+  organization?: {
+    show?: boolean; order?: number; title?: string; description?: string;
+    items?: { organization?: string; link?: string; tags?: string; role?: string; location?: string; date?: string; description?: string; skills?: string }[];
+  } | null;
+}
+const { organization } = Astro.props;
+---
+{organization?.show && (
+  <Section name="organization" icon="fa-house-user" {...organization}>
+    {organization.items?.length ? (
+      <div class="items">
+        {organization.items.map((item) => (
+          <div class="item">
+            {item.organization && (
+              <Fragment>
+                <div class="row">
+                  <div class="company">
+                    {item.link
+                      ? <a href={item.link} target="_blank" set:html={item.organization} />
+                      : <span set:html={item.organization} />}
+                    {item.tags && <small>[{item.tags}]</small>}
+                  </div>
+                  <div class="date"><span>{item.date}</span></div>
+                </div>
+                <div class="row">
+                  <div class="role">Role: <span>{item.role}</span></div>
+                  {item.location && (
+                    <div class="location"><i class="fa-solid fa-location-dot"></i><span>{item.location}</span></div>
+                  )}
+                </div>
+                {item.description && <div class="description markdown" set:html={md(item.description)} />}
+                {item.skills && <div class="skills markdown">Skills: <Fragment set:html={md(item.skills)} /></div>}
+              </Fragment>
+            )}
+          </div>
+        ))}
+      </div>
+    ) : null}
+  </Section>
+)}
