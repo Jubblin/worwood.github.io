@@ -132,6 +132,10 @@ experience: # CSS: section.experience
       section: Customer Projects # CSS: .sub-section-content .sub-section-title h3 (distinct style: middle font-size, bold weight, dashed border, text color)
       items: # CSS: .sub-section-content .item
         - client: "'Under NDA'" # CSS: .sub-section-content .item .row .client
+          project: Agentic AI legacy modernization pipeline # CSS: .sub-section-content .item .project
+          description: Architected a deterministic 14-stage agentic AI modernization pipeline (using Antigravity / agy) automating legacy COBOL reverse-engineering, domain modeling, service scaffolding, and test generation. Established human-in-the-loop governance with formal DAG-based verification gates requiring test-report validation and architectural signoff before releasing downstream dependencies. Integrated characterization and regression test harnesses guaranteeing AI-generated service code strictly preserved core business invariants while remediating legacy security flaws, and built an observability and workflow control tower capturing live execution transcripts, diff reviews, and audit trails across the automated delivery lifecycle. # CSS: .sub-section-content .item .description.markdown
+
+        - client: "'Under NDA'" # CSS: .sub-section-content .item .row .client
           project: Secure financial trading messaging platform # CSS: .sub-section-content .item .project
           description: Lead Cloud Architect delivering a secure trade messaging platform within GCP, utilising an event based architecture leveraging GCP PubSub and GKE while delivering isolated infrastructure to clients and partners. # CSS: .sub-section-content .item .description.markdown
 
