@@ -1,1 +1,1 @@
-FROM ghcr.io/gohugoio/hugo:v0.162.1
+FROM ghcr.io/gohugoio/hugo:v0.167.0@sha256:7bb99a126eddeea8fbfaacedc5ef6708805411bdeaa01e668405a137fd02d048
