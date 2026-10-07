@@ -1,0 +1,37 @@
+---
+import { getEmDashCollection, getEmDashEntry } from "emdash";
+import Resume from "../components/resume/Resume.astro";
+
+// Maps EmDash collections (see seed/seed.json) onto the data.yml shape the theme components take.
+const [{ entry: resume }, sections, experience, skill, organization, reference] = await Promise.all([
+  getEmDashEntry("resume", "main"),
+  getEmDashCollection("section"),
+  getEmDashCollection("experience"),
+  getEmDashCollection("skill"),
+  getEmDashCollection("organization"),
+  getEmDashCollection("reference"),
+]);
+const rows = (r: { entries: { data: any }[] }) =>
+  r.entries.map((e) => e.data).sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+const section = Object.fromEntries(rows(sections).map((s) => [s.key, s]));
+const r: any = resume?.data ?? {};
+
+const data = {
+  meta: { language: r.language, direction: r.direction },
+  close: r.close,
+  basic: { name: r.name, title: r.title, avatar: { show: r.avatar_show, path: r.avatar_path } },
+  contact: r,
+  profile: section.profile,
+  experience: section.experience && { ...section.experience, items: rows(experience) },
+  skill: section.skill && {
+    ...section.skill,
+    groups: rows(skill).map((g) => ({ name: g.name, item: (g.item ?? []).map((i: any) => i.name) })),
+  },
+  organization: section.organization && { ...section.organization, items: rows(organization) },
+  reference: section.reference && {
+    ...section.reference,
+    items: rows(reference).map((x) => ({ name: x.name, title: x.role, institution: x.company, description: x.description })),
+  },
+};
+---
+<Resume data={data} />

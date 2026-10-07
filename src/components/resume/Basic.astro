@@ -1,0 +1,20 @@
+---
+import Contact from "./Contact.astro";
+
+interface Props {
+  basic?: { name?: string; title?: string; avatar?: { show?: boolean; path?: string } } | null;
+  contact?: Record<string, string | null | undefined> | null;
+}
+const { basic, contact } = Astro.props;
+const showAvatar = Boolean(basic?.avatar?.show); // EmDash booleans may arrive as 0/1
+---
+{basic && (
+  <section class="basic">
+    {showAvatar && basic.avatar?.path && <img class="avatar" src={basic.avatar.path} alt="avatar" />}
+    <div class="header" style={showAvatar ? undefined : "align-items: center;"}>
+      {basic.name && <h1 class="name">{basic.name}</h1>}
+      {basic.name && basic.title && <h3 class="title">{basic.title}</h3>}
+      <Contact contact={contact} center={!showAvatar} />
+    </div>
+  </section>
+)}
