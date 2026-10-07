@@ -1,0 +1,62 @@
+name: Validate EmDash build (PR)
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  validate-emdash:
+    runs-on: ubuntu-latest
+    env:
+      PREVIEW_URL: http://localhost:4329
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate seed
+        run: npx emdash seed seed/seed.json --validate
+
+      - name: Build
+        run: npm run build
+
+      - name: Start preview (local D1 + R2)
+        run: |
+          npx astro preview --port 4329 > "$RUNNER_TEMP/preview.log" 2>&1 &
+          for _ in $(seq 1 60); do
+            curl -fsS -o /dev/null "$PREVIEW_URL/" && exit 0
+            sleep 2
+          done
+          cat "$RUNNER_TEMP/preview.log"
+          exit 1
+
+      # The first request runs EmDash migrations and creates the schema;
+      # resume content is then loaded straight into the local D1 sqlite file.
+      - name: Seed resume content into local D1
+        run: |
+          db=$(find .wrangler/state/v3/d1/miniflare-D1DatabaseObject -name "*.sqlite" | head -1)
+          npx emdash seed seed/seed.json --database "$db"
+
+      - name: Smoke test rendered site
+        run: python3 .github/scripts/smoke_check_url.py "$PREVIEW_URL"
+
+      - name: Preview log
+        if: always()
+        run: cat "$RUNNER_TEMP/preview.log" || true

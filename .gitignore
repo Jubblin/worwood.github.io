@@ -14,3 +14,8 @@ data.db-*
 !.env.example
 .dev.vars
 .dev.vars.*
+
+# Hugo local build output that lands in Astro public/ (remove at cutover)
+public/index.html
+public/assets/css/
+public/assets/icons/svgs/README.txt
