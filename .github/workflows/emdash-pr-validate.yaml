@@ -51,7 +51,7 @@ jobs:
       # resume content is then loaded straight into the local D1 sqlite file.
       - name: Seed resume content into local D1
         run: |
-          db=$(find .wrangler/state/v3/d1/miniflare-D1DatabaseObject -name "*.sqlite" | head -1)
+          db=$(find .wrangler/state/v3/d1/miniflare-D1DatabaseObject -name "*.sqlite" ! -name metadata.sqlite | head -1)
           npx emdash seed seed/seed.json --database "$db"
 
       - name: Smoke test rendered site

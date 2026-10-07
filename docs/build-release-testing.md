@@ -28,7 +28,7 @@ Reproduce the PR check locally:
 rm -rf .wrangler dist && npm ci && npm run build
 npx astro preview --port 4329 &   # wait until http://localhost:4329/ responds
 curl -fsS -o /dev/null http://localhost:4329/
-npx emdash seed seed/seed.json --database "$(find .wrangler/state/v3/d1/miniflare-D1DatabaseObject -name '*.sqlite' | head -1)"
+npx emdash seed seed/seed.json --database "$(find .wrangler/state/v3/d1/miniflare-D1DatabaseObject -name '*.sqlite' ! -name metadata.sqlite | head -1)"
 python3 .github/scripts/smoke_check_url.py http://localhost:4329
 npx astro preview stop
 ```
