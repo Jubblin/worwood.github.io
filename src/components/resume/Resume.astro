@@ -23,6 +23,7 @@ const SITE = {
 interface Props {
   data: {
     meta?: { language?: string; direction?: string };
+    close?: string;
     basic?: any; contact?: any; profile?: any; experience?: any; skill?: any; organization?: any; reference?: any;
   };
   open?: boolean;
@@ -70,7 +71,7 @@ const description = open ? SITE.description || SITE.title : "Online Resume";
         <Reference reference={data.reference} />
       </div>
     ) : (
-      <div class="close"><div class="description" set:html={md(SITE.close)} /></div>
+      <div class="close"><div class="description" set:html={md(data.close ?? SITE.close)} /></div>
     )}
   </body>
 </html>

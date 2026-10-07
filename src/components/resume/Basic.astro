@@ -6,7 +6,7 @@ interface Props {
   contact?: Record<string, string | null | undefined> | null;
 }
 const { basic, contact } = Astro.props;
-const showAvatar = basic?.avatar?.show === true;
+const showAvatar = Boolean(basic?.avatar?.show); // EmDash booleans may arrive as 0/1
 ---
 {basic && (
   <section class="basic">
