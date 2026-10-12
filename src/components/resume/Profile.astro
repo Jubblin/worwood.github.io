@@ -1,0 +1,7 @@
+---
+import Section from "./Section.astro";
+
+interface Props { profile?: { show?: boolean; order?: number; title?: string; description?: string } | null }
+const { profile } = Astro.props;
+---
+{profile?.show && <Section name="profile" icon="fa-user" {...profile} />}
