@@ -1,0 +1,70 @@
+---
+import Section from "./Section.astro";
+import { md } from "../../lib/markdown";
+
+export interface Project { client?: string; date?: string; project?: string; description?: string; skills?: string; section?: string }
+export interface Job {
+  company?: string; link?: string; tags?: string; role?: string; location?: string; date?: string;
+  description?: string; skills?: string; section?: string; items?: Project[];
+}
+interface Props { experience?: { show?: boolean; order?: number; title?: string; description?: string; items?: Job[] } | null }
+const { experience } = Astro.props;
+---
+{experience?.show && (
+  <Section name="experience" icon="fa-briefcase" {...experience}>
+    {experience.items?.length ? (
+      <div class="items">
+        {experience.items.map((item) => (
+          <div class="item">
+            {item.company && (
+              <Fragment>
+                <div class="row">
+                  <div class="company">
+                    {item.link
+                      ? <a href={item.link} target="_blank" set:html={item.company} />
+                      : <span set:html={item.company} />}
+                    {item.tags && <small>[{item.tags}]</small>}
+                  </div>
+                  <div class="date"><span>{item.date}</span></div>
+                </div>
+                <div class="row">
+                  <div class="role"><span>Role: {item.role}</span></div>
+                  {item.location && (
+                    <div class="location"><i class="fa-solid fa-location-dot"></i><span>{item.location}</span></div>
+                  )}
+                </div>
+                {item.description && <div class="description markdown" set:html={md(item.description)} />}
+                {item.skills && <div class="skills markdown">Skills: <Fragment set:html={md(item.skills)} /></div>}
+                {item.section && (
+                  <div class="sub-section-content">
+                    <div class="sub-section-title"><h3 set:html={md(item.section)} /></div>
+                    {item.items?.length ? (
+                      <div class="item">
+                        {item.items.map((p) => (
+                          <div class="item">
+                            {p.client && (
+                              <Fragment>
+                                <div class="row">
+                                  <div class="client"><a set:html={p.client} /></div>
+                                  <div class="date"><span>{p.date}</span></div>
+                                </div>
+                                {p.project && <div class="project markdown">Project: {p.project}</div>}
+                                {p.description && <div class="description markdown" set:html={md(p.description)} />}
+                                {p.skills && <div class="skills markdown">Skills: <Fragment set:html={md(p.skills)} /></div>}
+                                {p.section && <div class="section markdown" set:html={md(p.section)} />}
+                              </Fragment>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    ) : null}
+                  </div>
+                )}
+              </Fragment>
+            )}
+          </div>
+        ))}
+      </div>
+    ) : null}
+  </Section>
+)}

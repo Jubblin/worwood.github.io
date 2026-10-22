@@ -1,0 +1,869 @@
+{
+	"$schema": "https://emdashcms.com/seed.schema.json",
+	"version": "1",
+	"meta": {
+		"name": "Richard Worwood",
+		"description": "Online resume",
+		"author": "Richard Worwood"
+	},
+	"settings": {
+		"title": "Richard Worwood",
+		"tagline": "Senior Cloud Infrastructure Architect"
+	},
+	"collections": [
+		{
+			"slug": "resume",
+			"label": "Resume",
+			"labelSingular": "Resume",
+			"routable": false,
+			"supports": [
+				"revisions"
+			],
+			"titleField": "name",
+			"admin": {
+				"listColumns": [
+					"title"
+				]
+			},
+			"fields": [
+				{
+					"slug": "name",
+					"label": "Name",
+					"type": "string",
+					"required": true
+				},
+				{
+					"slug": "title",
+					"label": "Title",
+					"type": "string"
+				},
+				{
+					"slug": "avatar_show",
+					"label": "Show avatar",
+					"type": "boolean"
+				},
+				{
+					"slug": "avatar_path",
+					"label": "Avatar path",
+					"type": "string"
+				},
+				{
+					"slug": "location",
+					"label": "Location",
+					"type": "string"
+				},
+				{
+					"slug": "email",
+					"label": "Email",
+					"type": "string"
+				},
+				{
+					"slug": "phone",
+					"label": "Phone",
+					"type": "string"
+				},
+				{
+					"slug": "website",
+					"label": "Website",
+					"type": "string"
+				},
+				{
+					"slug": "gender",
+					"label": "Gender",
+					"type": "string"
+				},
+				{
+					"slug": "nationality",
+					"label": "Nationality",
+					"type": "string"
+				},
+				{
+					"slug": "drivinglicense",
+					"label": "Drivinglicense",
+					"type": "string"
+				},
+				{
+					"slug": "github",
+					"label": "Github",
+					"type": "string"
+				},
+				{
+					"slug": "linkedin",
+					"label": "Linkedin",
+					"type": "string"
+				},
+				{
+					"slug": "direction",
+					"label": "Text direction",
+					"type": "select",
+					"validation": {
+						"options": [
+							"ltr",
+							"rtl"
+						]
+					}
+				},
+				{
+					"slug": "language",
+					"label": "Language",
+					"type": "string"
+				},
+				{
+					"slug": "close",
+					"label": "Hidden-resume message",
+					"type": "text"
+				}
+			]
+		},
+		{
+			"slug": "section",
+			"label": "Sections",
+			"labelSingular": "Section",
+			"routable": false,
+			"supports": [
+				"revisions"
+			],
+			"titleField": "title",
+			"admin": {
+				"listColumns": [
+					"key",
+					"order",
+					"show"
+				]
+			},
+			"fields": [
+				{
+					"slug": "key",
+					"label": "Key",
+					"type": "select",
+					"required": true,
+					"validation": {
+						"options": [
+							"profile",
+							"experience",
+							"skill",
+							"organization",
+							"reference"
+						]
+					}
+				},
+				{
+					"slug": "title",
+					"label": "Title",
+					"type": "string",
+					"required": true
+				},
+				{
+					"slug": "show",
+					"label": "Show",
+					"type": "boolean"
+				},
+				{
+					"slug": "order",
+					"label": "Order",
+					"type": "integer"
+				},
+				{
+					"slug": "description",
+					"label": "Description",
+					"type": "text"
+				}
+			]
+		},
+		{
+			"slug": "experience",
+			"label": "Experience",
+			"labelSingular": "Experience",
+			"routable": false,
+			"supports": [
+				"revisions"
+			],
+			"titleField": "company",
+			"admin": {
+				"listColumns": [
+					"role",
+					"date",
+					"order"
+				]
+			},
+			"fields": [
+				{
+					"slug": "company",
+					"label": "Company",
+					"type": "string",
+					"required": true,
+					"searchable": true
+				},
+				{
+					"slug": "link",
+					"label": "Link",
+					"type": "string"
+				},
+				{
+					"slug": "tags",
+					"label": "Tags",
+					"type": "string"
+				},
+				{
+					"slug": "role",
+					"label": "Role",
+					"type": "string",
+					"searchable": true
+				},
+				{
+					"slug": "location",
+					"label": "Location",
+					"type": "string"
+				},
+				{
+					"slug": "date",
+					"label": "Date",
+					"type": "string"
+				},
+				{
+					"slug": "description",
+					"label": "Description",
+					"type": "text",
+					"searchable": true
+				},
+				{
+					"slug": "specialties",
+					"label": "Specialties",
+					"type": "text"
+				},
+				{
+					"slug": "skills",
+					"label": "Skills",
+					"type": "text"
+				},
+				{
+					"slug": "section",
+					"label": "Projects heading",
+					"type": "string"
+				},
+				{
+					"slug": "items",
+					"label": "Projects",
+					"type": "repeater",
+					"validation": {
+						"subFields": [
+							{
+								"slug": "client",
+								"label": "Client",
+								"type": "string"
+							},
+							{
+								"slug": "project",
+								"label": "Project",
+								"type": "string"
+							},
+							{
+								"slug": "description",
+								"label": "Description",
+								"type": "text"
+							}
+						]
+					}
+				},
+				{
+					"slug": "order",
+					"label": "Order",
+					"type": "integer",
+					"required": true
+				}
+			]
+		},
+		{
+			"slug": "skill",
+			"label": "Skills",
+			"labelSingular": "Skill group",
+			"routable": false,
+			"supports": [
+				"revisions"
+			],
+			"titleField": "name",
+			"admin": {
+				"listColumns": [
+					"order"
+				]
+			},
+			"fields": [
+				{
+					"slug": "name",
+					"label": "Name",
+					"type": "string",
+					"required": true
+				},
+				{
+					"slug": "item",
+					"label": "Items",
+					"type": "repeater",
+					"validation": {
+						"subFields": [
+							{
+								"slug": "name",
+								"label": "Name",
+								"type": "string",
+								"required": true
+							}
+						]
+					}
+				},
+				{
+					"slug": "order",
+					"label": "Order",
+					"type": "integer",
+					"required": true
+				}
+			]
+		},
+		{
+			"slug": "organization",
+			"label": "Organizations",
+			"labelSingular": "Organization",
+			"routable": false,
+			"supports": [
+				"revisions"
+			],
+			"titleField": "organization",
+			"admin": {
+				"listColumns": [
+					"role",
+					"date",
+					"order"
+				]
+			},
+			"fields": [
+				{
+					"slug": "organization",
+					"label": "Organization",
+					"type": "string",
+					"required": true
+				},
+				{
+					"slug": "role",
+					"label": "Role",
+					"type": "string"
+				},
+				{
+					"slug": "date",
+					"label": "Date",
+					"type": "string"
+				},
+				{
+					"slug": "url",
+					"label": "URL",
+					"type": "url"
+				},
+				{
+					"slug": "description",
+					"label": "Description",
+					"type": "text"
+				},
+				{
+					"slug": "order",
+					"label": "Order",
+					"type": "integer",
+					"required": true
+				}
+			]
+		},
+		{
+			"slug": "reference",
+			"label": "References",
+			"labelSingular": "Reference",
+			"routable": false,
+			"supports": [
+				"revisions"
+			],
+			"titleField": "name",
+			"admin": {
+				"listColumns": [
+					"company",
+					"order"
+				]
+			},
+			"fields": [
+				{
+					"slug": "name",
+					"label": "Name",
+					"type": "string",
+					"required": true
+				},
+				{
+					"slug": "role",
+					"label": "Role",
+					"type": "string"
+				},
+				{
+					"slug": "company",
+					"label": "Company",
+					"type": "string"
+				},
+				{
+					"slug": "contact",
+					"label": "Contact",
+					"type": "string"
+				},
+				{
+					"slug": "description",
+					"label": "Description",
+					"type": "text"
+				},
+				{
+					"slug": "order",
+					"label": "Order",
+					"type": "integer",
+					"required": true
+				}
+			]
+		}
+	],
+	"content": {
+		"resume": [
+			{
+				"id": "resume-main",
+				"slug": "main",
+				"status": "published",
+				"data": {
+					"name": "Richard Worwood",
+					"title": "Senior Cloud Infrastructure Architect",
+					"avatar_show": true,
+					"avatar_path": "/images/profile.jpeg",
+					"location": "London, England",
+					"email": "richard@worwood.com",
+					"phone": "+44 7771 662880",
+					"website": "worwood.com",
+					"gender": "he/him",
+					"nationality": "UK",
+					"drivinglicense": "Full",
+					"github": "Jubblin",
+					"linkedin": "richardworwood",
+					"direction": "ltr",
+					"language": "en",
+					"close": "<strong>Sorry, my resume has been hidden.</strong>"
+				}
+			}
+		],
+		"section": [
+			{
+				"id": "section-profile",
+				"slug": "profile",
+				"status": "published",
+				"data": {
+					"key": "profile",
+					"title": "Profile",
+					"show": true,
+					"order": 1,
+					"description": "I'm a cloud and infrastructure architect with a 25-year engineering career that began in enterprise networking and progressed through DevOps, platform engineering and technical consulting into cloud architecture, with a sustained recent focus on Google Cloud — a year built around Anthos on Bare Metal, followed by a Kubernetes and container platform engagement at LSEG where roughly 80% of my time has been on GKE. At Endava I've also led the architecture of a secure, event-driven trading platform on GCP built around Pub/Sub and GKE, combining hands-on architectural ownership with mentoring and growing the engineering teams that deliver it. My background spans AWS, Azure and Google Cloud, giving me a working view of what migrations off those platforms actually involve, but Google Cloud is where I now concentrate. Most of my career has run through consulting engagements rather than a single in-house team, including at Devoteam, a Google Cloud partner, and I'm most effective owning the statement of work, standing behind the architecture, and defending it directly with senior client technologists.\n"
+				}
+			},
+			{
+				"id": "section-experience",
+				"slug": "experience",
+				"status": "published",
+				"data": {
+					"key": "experience",
+					"title": "Experience",
+					"show": true,
+					"order": 2
+				}
+			},
+			{
+				"id": "section-skill",
+				"slug": "skill",
+				"status": "published",
+				"data": {
+					"key": "skill",
+					"title": "Technical Skills",
+					"show": true,
+					"order": 1
+				}
+			},
+			{
+				"id": "section-organization",
+				"slug": "organization",
+				"status": "published",
+				"data": {
+					"key": "organization",
+					"title": "Organizations",
+					"show": true,
+					"order": 10,
+					"description": "Voluntary activities undertaken to support the community and charitable causes."
+				}
+			},
+			{
+				"id": "section-reference",
+				"slug": "reference",
+				"status": "published",
+				"data": {
+					"key": "reference",
+					"title": "References",
+					"show": true,
+					"order": 14,
+					"description": "References are available upon request.\n"
+				}
+			}
+		],
+		"experience": [
+			{
+				"id": "experience-endava-uk",
+				"slug": "endava-uk",
+				"status": "published",
+				"data": {
+					"company": "Endava UK",
+					"link": "#Endava",
+					"tags": "Full-time",
+					"role": "Senior Infrastructure Architect",
+					"location": "Hybrid/London",
+					"date": "August, 2022 - Present",
+					"description": "Leading the design and delivery of cloud-native infrastructure solutions across major cloud providers. Combining hands-on technical architecture with strategic platform engineering, mentoring technical teams, and driving technical excellence in complex enterprise environments.",
+					"section": "Customer Projects",
+					"items": [
+						{
+							"client": "'Under NDA'",
+							"project": "Agentic AI legacy modernization pipeline",
+							"description": "Architected a deterministic 14-stage agentic AI modernization pipeline (using Antigravity / agy) automating legacy COBOL reverse-engineering, domain modeling, service scaffolding, and test generation. Established human-in-the-loop governance with formal DAG-based verification gates requiring test-report validation and architectural signoff before releasing downstream dependencies. Integrated characterization and regression test harnesses guaranteeing AI-generated service code strictly preserved core business invariants while remediating legacy security flaws, and built an observability and workflow control tower capturing live execution transcripts, diff reviews, and audit trails across the automated delivery lifecycle."
+						},
+						{
+							"client": "'Under NDA'",
+							"project": "Secure financial trading messaging platform",
+							"description": "Lead Cloud Architect delivering a secure trade messaging platform within GCP, utilising an event based architecture leveraging GCP PubSub and GKE while delivering isolated infrastructure to clients and partners."
+						},
+						{
+							"client": "LSEG",
+							"project": "Kubernetes and Container Platforms",
+							"description": "Assigned to a long term consultancy role where I am leading the vision and delivery of Kubernetes and Container platforms across all major Cloud Providers.\nGoogle Cloud was the primary platform for this work, with GKE accounting for roughly 80% of my time on the engagement against the other cloud providers combined.\nLed development and execution of strategy for Kubernetes and Container platform teams, aligning with strategic business objectives, while improving productivity and developer experience both without and within.\nLed, mentored and grew a high-performing global team, ensuring they had the resources and support needed to excel."
+						},
+						{
+							"client": "Various",
+							"project": "Short form buy & sell side engagements",
+							"description": "Working on buy and sell side engagements as part of Endava's internal and external investment management operations. Analysing business capabilities, strategies, process and procedures to understand there maturity and readiness for sale and buy transactions across a range of technology companies across Europe."
+						}
+					],
+					"order": 1
+				}
+			},
+			{
+				"id": "experience-devoteam",
+				"slug": "devoteam",
+				"status": "published",
+				"data": {
+					"company": "Devoteam",
+					"link": "#",
+					"tags": "Full-time",
+					"role": "Principal Consultant",
+					"location": "Hybrid/London",
+					"date": "April 2021 - July 2022",
+					"description": "Spent roughly a year focused on Anthos on Bare Metal, architecting Google Cloud's Kubernetes platform directly onto the client's existing bare-metal estate as part of the Tier 1 market data provider's real-time platform distributing 70+ million instruments to clients globally, hybrid Bare-metal and Cloud Kubernetes environments. Provided technical leadership, architecture guidance, and hands-on implementation to modernize critical market data infrastructure.",
+					"order": 2
+				}
+			},
+			{
+				"id": "experience-valtech",
+				"slug": "valtech",
+				"status": "published",
+				"data": {
+					"company": "Valtech",
+					"link": "#Valtech",
+					"tags": "Full-time",
+					"role": "Senior DevOps Consultant",
+					"location": "London, Manchester, Bristol, Brussels, Dusseldorf",
+					"date": "August 2017 - April 2021",
+					"description": "Led DevOps transformation initiatives and platform engineering across multiple enterprise clients. Designed and implemented cloud-native architectures, CI/CD pipelines, and infrastructure automation using modern tooling across Azure, GCP, and AWS. Mentored teams on DevOps practices and cloud adoption strategies.\n\nTechnologies: Azure, GCP, AWS (EKS, RDS & EFS), Kong, TLS, Bamboo, Jenkins, Bitbucket, Gitlab, Github, SonarQube, Nexus, VSTS, Artifactory, Istio, ELK, ECK, Prometheus/Grafana, WAFs, Ansible, Terraform, Packer, Puppet, Powershell & Powershell DSC, IIS, Nginx, Apache, Windows Server, Ubuntu, Centos, RHEL, React, SpringBoot, .Net Web, .Net Core\n",
+					"section": "Customer Projects",
+					"items": [
+						{
+							"client": "Toyota Motors",
+							"project": "Onboard Connected Services",
+							"description": "Project to deliver services for delivery within the manufacturers vehicles to extend and enhance legacy solutions which have historically been inflexible. This gives the customers smart functionality in there vehicles but creates new revenue streams for the Manufacturer. Implemented a Kubernetes microservices architecture utilising React based front end and Springboot intergration services."
+						},
+						{
+							"client": "Department for Transport",
+							"project": "Blue Badge system",
+							"description": "Project to deliver a suite of Services to provide a system to manage the UK's Blue Badge application, eligibility and issuance requirements."
+						},
+						{
+							"client": "Major British Airline",
+							"project": "Consultancy Engagement to audit, rationalise and implement DevOps and Agile working into existing teams"
+						},
+						{
+							"client": "Department for Work and Pensions",
+							"project": "New Style Job Seekers Allowance",
+							"description": "Project to replace an aged and outmoded system. Implemented a, microservices architecture based, claimant system, with the intent of both easing the process of initial claim submission and onboarding into the UK benefits system."
+						},
+						{
+							"client": "OFGEM",
+							"project": "Proof of Concept Secure Data Exchange",
+							"description": "Project to implement a Proof of Concept secure data exchange to be used to ingest data into an organisational data hub."
+						},
+						{
+							"client": "Delonghi",
+							"project": "Delonghi Retail",
+							"description": "Brown field project to update and extend functionality within brochureware, CMS and ecommerce sites hosted on Google Cloud. Developed an Azure migration strategy as part of a move to increase resilience and scalability of the hosting platforms in use as part of this global solution."
+						}
+					],
+					"order": 3
+				}
+			},
+			{
+				"id": "experience-tdb-fusion",
+				"slug": "tdb-fusion",
+				"status": "published",
+				"data": {
+					"company": "TDB Fusion",
+					"link": "#",
+					"tags": "Full-time",
+					"role": "Principal Technical Consultant",
+					"location": "Hybrid/London/Reading, International travel",
+					"date": "August, 2002 - July 2017",
+					"description": "Senior technical leader specializing in networking, systems architecture, and infrastructure design across Enterprise and Telecommunications sectors. Led technical strategy, architecture design, and platform development initiatives. Combined deep technical expertise with leadership responsibilities, mentoring technical teams and driving technical excellence in complex multi-vendor environments.",
+					"specialties": "Pre-sales, Post-sales, team development, product management, service management/development/pricing, professional services, project/program management, contract negotiation, technical training.",
+					"skills": "Self-healing · Technical Requirements · Cloud Strategy · Public Cloud · Emerging Technologies · Soft Skills · Business Requirements · Agile Methodologies · Problem Solving",
+					"order": 4
+				}
+			},
+			{
+				"id": "experience-thrupoint",
+				"slug": "thrupoint",
+				"status": "published",
+				"data": {
+					"company": "Thrupoint",
+					"link": "#",
+					"tags": "Contract",
+					"role": "Technical Consultant",
+					"location": "Warsaw & Poznan, Poland",
+					"date": "May 2002 - July 2002",
+					"description": "Led technical design and implementation of a countrywide IP VPN backbone network using Cisco MPLS technology. Architected and delivered critical network infrastructure enabling enterprise services and wholesale IP transit. Provided technical leadership to a trans-national team, ensuring high-speed data transmission with Quality of Service (QoS) capabilities for mission-critical applications.",
+					"skills": "Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving",
+					"order": 5
+				}
+			},
+			{
+				"id": "experience-orchestream",
+				"slug": "orchestream",
+				"status": "published",
+				"data": {
+					"company": "Orchestream",
+					"link": "#",
+					"tags": "Full-time",
+					"role": "Support Engineer",
+					"location": "London, International travel",
+					"date": "January 2001 - May 2002",
+					"description": "Provided technical support and engineering expertise for Orchestream's product portfolio, collaborating with technical consultants on design and deployment of customer projects. Specialized in IP-based MPLS VPN and QoS network implementations across multiple vendor platforms. Worked with major tier one Service Providers to deliver complex network solutions.",
+					"skills": "Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving",
+					"order": 6
+				}
+			},
+			{
+				"id": "experience-cap-gemini-icl",
+				"slug": "cap-gemini-icl",
+				"status": "published",
+				"data": {
+					"company": "Cap Gemini/ICL",
+					"link": "#",
+					"tags": "Full-time",
+					"role": "Operational Technical Design Architect",
+					"location": "London, UK travel",
+					"date": "1998 - 2001",
+					"description": "Designed and architected operational technical solutions for enterprise clients, leading technical design initiatives and ensuring alignment between business requirements and technical implementation. Provided technical leadership in complex infrastructure projects, working across multiple customer sites to deliver scalable and reliable solutions.",
+					"skills": "Self-healing · Technical Requirements · Emerging Technologies · Soft Skills · Problem Solving",
+					"order": 7
+				}
+			},
+			{
+				"id": "experience-info-products",
+				"slug": "info-products",
+				"status": "published",
+				"data": {
+					"company": "Info'Products",
+					"link": "#",
+					"tags": "Full-time",
+					"role": "Senior Architect",
+					"location": "UK Wide",
+					"date": "1995 - 1998",
+					"description": "Progressed through technical roles from Hardware Engineer to Senior Architect, leading technical teams and designing solutions across multiple customer sites. Provided technical leadership, architecture design, and hands-on implementation expertise for enterprise infrastructure projects.",
+					"skills": "Technical Requirements · Soft Skills · Problem Solving",
+					"order": 8
+				}
+			}
+		],
+		"skill": [
+			{
+				"id": "skill-cloud-native",
+				"slug": "cloud-native",
+				"status": "published",
+				"data": {
+					"name": "Cloud Native",
+					"item": [
+						{
+							"name": "Architecture"
+						},
+						{
+							"name": "Kubernetes"
+						},
+						{
+							"name": "GitOps/DevOps/DevSecOps"
+						},
+						{
+							"name": "CNI's & Networking"
+						},
+						{
+							"name": "IaC \"Terraform, Cloudformation & Crossplane\""
+						},
+						{
+							"name": "CI/CD \"Jenkins, GitLab, BitBucket, Github\""
+						}
+					],
+					"order": 1
+				}
+			},
+			{
+				"id": "skill-aws",
+				"slug": "aws",
+				"status": "published",
+				"data": {
+					"name": "AWS",
+					"item": [
+						{
+							"name": "EKS"
+						},
+						{
+							"name": "ECS"
+						},
+						{
+							"name": "Lambda"
+						},
+						{
+							"name": "EC2"
+						},
+						{
+							"name": "RDS"
+						}
+					],
+					"order": 2
+				}
+			},
+			{
+				"id": "skill-azure",
+				"slug": "azure",
+				"status": "published",
+				"data": {
+					"name": "Azure",
+					"item": [
+						{
+							"name": "AKS"
+						},
+						{
+							"name": "ACA"
+						},
+						{
+							"name": "Azure SQL"
+						},
+						{
+							"name": "Devops"
+						}
+					],
+					"order": 3
+				}
+			},
+			{
+				"id": "skill-google",
+				"slug": "google",
+				"status": "published",
+				"data": {
+					"name": "Google",
+					"item": [
+						{
+							"name": "GKE & Anthos"
+						},
+						{
+							"name": "Anthos Service Mesh"
+						},
+						{
+							"name": "NCC, Networking,"
+						},
+						{
+							"name": "SCC"
+						},
+						{
+							"name": "Confidential Compute"
+						},
+						{
+							"name": "IAM"
+						},
+						{
+							"name": "PubSub"
+						},
+						{
+							"name": "Storage"
+						},
+						{
+							"name": "Compute"
+						},
+						{
+							"name": "Functions"
+						},
+						{
+							"name": "BigQuery"
+						},
+						{
+							"name": "Dataflow"
+						},
+						{
+							"name": "Data Loss Prevention"
+						},
+						{
+							"name": "Cloud Run"
+						},
+						{
+							"name": "Cloud Composer"
+						},
+						{
+							"name": "Gemini & Enterprise"
+						},
+						{
+							"name": "AntiGravity"
+						},
+						{
+							"name": "ADK"
+						},
+						{
+							"name": "Agent Governence"
+						}
+					],
+					"order": 4
+				}
+			}
+		],
+		"organization": [
+			{
+				"id": "organization-1st-baldwyns-scout-group",
+				"slug": "1st-baldwyns-scout-group",
+				"status": "published",
+				"data": {
+					"organization": "1st Baldwyns Scout Group",
+					"role": "Group Lead Volunteer & Trustee",
+					"date": "2024 - Present",
+					"url": "https://www.scouts.org.uk/",
+					"description": "Acting as the Group Lead Volunteer and a Charity Trustee for the 1st Baldwyns Scouts.\n",
+					"order": 1
+				}
+			},
+			{
+				"id": "organization-1st-baldwyns-park-scout-and-guides-group-charity-number-303501",
+				"slug": "1st-baldwyns-park-scout-and-guides-group-charity-number-303501",
+				"status": "published",
+				"data": {
+					"organization": "1st Baldwyns Park Scout and Guides Group (Charity number: 303501)",
+					"role": "Trustee",
+					"date": "2024 - Present",
+					"url": "https://www.scouts.org.uk/",
+					"description": "Acting as a Charity Trustee and board member for the 1st Baldwyns Park Scout and Guides Group, this is an external charity which owns and operates all of the facilities for the combined group along with supporting a range of community and educational endeavours to enable the community to use and enjoy the facilities.\n",
+					"order": 2
+				}
+			}
+		],
+		"reference": []
+	}
+}

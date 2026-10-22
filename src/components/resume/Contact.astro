@@ -1,0 +1,101 @@
+---
+import { md } from "../../lib/markdown";
+
+// Port of themes/online-resume/layouts/partials/contact.html.
+// [key, title, icon class, link builder | null (text, markdown link allowed)]
+type Row = [string, string, string, ((v: string) => string) | null];
+const pre = (p: string) => (v: string) => p + v;
+const ROWS: Row[] = [
+  ["location", "Location", "fa-solid fa-location-dot", null],
+  ["email", "Email", "fa-solid fa-envelope", pre("mailto:")],
+  ["phone", "Phone number", "fa-solid fa-phone", pre("tel:")],
+  ["website", "Website", "fa-solid fa-link", pre("https://")],
+  ["gender", "Gender", "fa-solid fa-venus-mars", null],
+  ["birthday", "Birthday", "fa-solid fa-cake-candles", null],
+  ["nationality", "Nationality", "fa-solid fa-flag", null],
+  ["visa", "Passport visa", "fa-solid fa-passport", null],
+  ["drivinglicense", "Driving license", "fa-solid fa-car", null],
+  ["github", "GitHub", "fa-brands fa-github", pre("https://github.com/")],
+  ["gitlab", "GitLab", "fa-brands fa-gitlab", pre("https://gitlab.com/")],
+  ["bitbucket", "Bitbucket", "fa-brands fa-bitbucket", pre("https://bitbucket.com/")],
+  ["git", "Git", "fa-brands fa-git", pre("https://")],
+  ["leetcode", "LeetCode", "icon icon-leetcode", pre("https://leetcode.com/")],
+  ["codeforces", "Codeforces", "icon icon-codeforces", pre("https://codeforces.com/profile/")],
+  ["codewars", "Codewars", "icon icon-codewars", pre("https://www.codewars.com/users/")],
+  ["topcoder", "Topcoder", "icon icon-topcoder", pre("https://profiles.topcoder.com/")],
+  ["huggingface", "Hugging Face", "icon icon-huggingface", pre("https://huggingface.co/")],
+  ["codepen", "CodePen", "fa-brands fa-codepen", pre("https://codepen.io/")],
+  ["tryhackme", "TryHackMe", "icon icon-tryhackme", pre("https://tryhackme.com/p/")],
+  ["googlescholar", "Google Scholar", "fa-brands fa-google-scholar", pre("https://scholar.google.com/citations?user=")],
+  ["researchgate", "ResearchGate", "fa-brands fa-researchgate", pre("https://www.researchgate.net/profile/")],
+  ["orcid", "ORCID", "fa-brands fa-orcid", pre("https://orcid.org/")],
+  ["figshare", "figshare", "icon icon-figshare", pre("https://figshare.com/authors/")],
+  ["kaggle", "Kaggle", "fa-brands fa-kaggle", pre("https://www.kaggle.com/")],
+  ["medium", "Medium", "fa-brands fa-medium", pre("https://medium.com/@")],
+  ["wordpress", "WordPress", "fa-brands fa-wordpress", (v) => `https://${v}.wordpress.com`],
+  ["blogger", "Blogger", "fa-brands fa-blogger", (v) => `https://${v}.blogspot.com`],
+  ["devto", "DEV Community", "fa-brands fa-dev", pre("https://dev.to/@")],
+  ["figma", "Figma", "fa-brands fa-figma", pre("https://www.figma.com/@")],
+  ["behance", "Behance", "fa-brands fa-behance", pre("https://www.behance.net/")],
+  ["dribbble", "Dribbble", "fa-brands fa-dribbble", pre("https://dribbble.com/")],
+  ["artstation", "ArtStation", "fa-brands fa-artstation", pre("https://www.artstation.com/")],
+  ["pixiv", "Pixiv", "fa-brands fa-pixiv", pre("https://www.pixiv.net/users/")],
+  ["pinterest", "Pinterest", "fa-brands fa-pinterest", pre("https://www.pinterest.com/")],
+  ["producthunt", "Product Hunt", "fa-brands fa-product-hunt", pre("https://www.producthunt.com/@")],
+  ["linkedin", "LinkedIn", "fa-brands fa-linkedin", pre("https://linkedin.com/in/")],
+  ["indeed", "Indeed", "icon icon-indeed", pre("https://my.indeed.com/p/")],
+  ["xing", "XING", "fa-brands fa-xing", pre("https://www.xing.com/profile/")],
+  ["fiverr", "Fiverr", "icon icon-fiverr", pre("https://www.fiverr.com/")],
+  ["freelancer", "Freelancer", "icon icon-freelancer", pre("https://www.freelancer.com/u/")],
+  ["wechat", "Wechat", "fa-brands fa-weixin", null],
+  ["whatsapp", "WhatsApp", "fa-brands fa-whatsapp", pre("https://wa.me/")],
+  ["telegram", "Telegram", "fa-brands fa-telegram", pre("https://t.me/")],
+  ["messenger", "Messenger", "fa-brands fa-facebook-messenger", pre("https://m.me/")],
+  ["line", "LINE", "fa-brands fa-line", pre("https://line.me/R/ti/p/@")],
+  ["viber", "Viber", "fa-brands fa-viber", pre("https://vb.me/R/")],
+  ["threema", "Threema", "icon icon-threema", pre("https://threema.id/R/")],
+  ["signal", "Signal", "fa-brands fa-signal-messenger", null],
+  ["wire", "Wire", "icon icon-wire", null],
+  ["stackoverflow", "Stack Overflow", "fa-brands fa-stack-overflow", pre("https://stackoverflow.com/users/")],
+  ["stackexchange", "Stack Exchange", "fa-brands fa-stack-exchange", pre("https://stackexchange.com/users/")],
+  ["quora", "Quora", "fa-brands fa-quora", pre("https://www.quora.com/profile/")],
+  ["zhihu", "知乎", "fa-brands fa-zhihu", pre("https://www.zhihu.com/people/")],
+  ["goodreads", "Goodreads", "fa-brands fa-goodreads", pre("https://www.goodreads.com/user/show/")],
+  ["strava", "Strava", "fa-brands fa-strava", pre("https://www.strava.com/athletes/")],
+  ["wikipedia", "Wikipedia", "fa-brands fa-wikipedia-w", pre("https://www.wikipedia.org/wiki/User:")],
+  ["twitter", "Twitter", "fa-brands fa-twitter", pre("https://twitter.com/")],
+  ["x", "X", "fa-brands fa-x-twitter", pre("https://x.com/")],
+  ["mastodon", "Mastodon", "fa-brands fa-mastodon", (v) => { const [u, h] = v.split("@"); return `https://${h}/@${u}`; }],
+  ["threads", "Threads", "fa-brands fa-threads", pre("https://www.threads.net/@")],
+  ["vk", "VK", "fa-brands fa-vk", pre("https://vk.com/")],
+  ["weibo", "新浪微博", "fa-brands fa-weibo", null],
+  ["instagram", "Instagram", "fa-brands fa-instagram", pre("https://instagram.com/")],
+  ["unsplash", "Unsplash", "fa-brands fa-unsplash", pre("https://unsplash.com/@")],
+  ["_500px", "500px", "fa-brands fa-500px", pre("https://500px.com/p/")],
+  ["youtube", "YouTube", "fa-brands fa-youtube", pre("https://www.youtube.com/@")],
+  ["tiktok", "TikTok", "fa-brands fa-tiktok", pre("https://www.tiktok.com/@")],
+  ["snapchat", "Snapchat", "fa-brands fa-snapchat", pre("https://www.snapchat.com/add/")],
+  ["twitch", "Twitch", "fa-brands fa-twitch", pre("https://www.twitch.tv/")],
+];
+
+interface Props { contact?: Record<string, string | null | undefined> | null; center?: boolean }
+const { contact, center } = Astro.props;
+const rows = contact ? ROWS.filter(([k]) => contact[k]) : [];
+---
+{contact && (
+  <div class="contact" style={center ? "justify-content: center;" : undefined}>
+    {rows.map(([key, title, icon, link]) => {
+      const text = String(contact[key]);
+      const href = link?.(text);
+      const ext = !["email", "phone"].includes(key);
+      return (
+        <div class="contact-item" title={title}>
+          <i class={icon}></i>
+          {href
+            ? <a href={href} title={href} target={ext ? "_blank" : undefined}>{text}</a>
+            : text.startsWith("[") ? <Fragment set:html={md(text)} /> : <span>{text}</span>}
+        </div>
+      );
+    })}
+  </div>
+)}
